@@ -26,23 +26,6 @@ style_mono_accent(
 )
 ```
 
-## Introducción
-
-+ Existe una relación entre ingreso y consumo de aire acondicionado.
-
-+ Los países de ingreso medio son los que más van a contribuir al crecimiento en su demanda (países como EEUU ya alcanzaron el 90% de los hogares).
-
-+ Piensen en el potencial de China e India. El problema es la demanda de energía (generación y distribución).
-
-+ Con datos de México se modela la relación entre el consumo de AC, temperatura e ingreso.
-
-+ Posteriormente se usaron las estimaciones para predecir el consumo de energia.
-
-+ En un escenario muy conservador, se predice saturación de AC en zonas de alta temperatura en tan solo unas décadas.
-
-+ En cuanto al consumo de energia, este dependerá del cambio tecnológico: mejoras en eficiencia en la generación de energia y/o en el consumo energético de los AC.
-
----
 
 ### Introducción
 
@@ -79,9 +62,10 @@ donde:
 
 
 ---
+<div style="text-align: justify">
+
 # Estrategia de Identificación: DiD
 ## Primera especificación
-<div style="text-align: justify">
 
 La autora utiliza dos especificaciones: una general (antes y después) y una donde observa el período después de tratamiento a corto y largo plazo.
 En la primera, hace un *pool* de las cuatro olas y calcula un MPL:
@@ -119,6 +103,7 @@ donde
 $Reform_{st}$ es igual a 1 si el estado ha estado expuesto a solo una ola: 
 
 * Ciudad de México e Hidalgo en 2011
+
 * Resto de los estados en 2016
 
 $\delta_1$ mide el efecto de **corto plazo**, o hasta 5 años después de la reforma.
@@ -130,6 +115,54 @@ $Reform_{st}$ es igual a 2 si el estado ha estado expuesto a dos olas;
 $\delta_2$ mide el efecto de **largo plazo**, o de 6-8 años después de la reforma.
 
 Problema: solo dos observaciones para el período de largo plazo
+
+---
+# Resultados
+
+Mostraremos los resultados de aumentar la facilidad/disminuir el costo del divorcio en tres partes:
+
+* Efecto en matrimonio y divorcio
+
+* Efecto en la VIP
+
+* Tests de robustez
+
+---
+#  Efecto en matrimonio y divorcio
+
+## Divorcios
+
+Usando datos de diversas fuentes de 1998-2016, estima:
+
+* Aumento en la tasa de divorcio en 34% - 0.24 respecto al promedio en ET antes de la reforma
+
+* Efecto persistente en período de post-tratamiento (10 años aprox.)
+
+![Fig 2](TablaB2.png) ![Fig 3](TablaC3.png)
+
+*ET: estados tratados*
+
+---
+
+## Modelo MPL 
+
+* Incremento de 0.3 pp - 19% de la media en los ET antes de la reforma - en la proporción de mujeres divorciadas en ET relativo a antes de la reforma
+
+![Fig 1](Tabla2.png)
+
+---
+##  Matrimonios
+
+La proporción de la población casada en el país es de 42%. 
+
+Observamos:
+* No hay evidencia de impacto en número de matrimonios por cada 1000 personas
+
+* Disminución de 3% (respecto a la media) en la proporción de mujeres casadas después de la reforma en ET en comparación a los EC
+
+* Incremento en 38% del número de divorcios por cada 1000 personas casadas en ET vs EC
+
+![Fig 2](TablaB2.png) ![Fig 3](TablaC3.png)
 
 ---
 # Geographical Pattern of Air Conditioning saturation by state in Mexico
