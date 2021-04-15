@@ -1,7 +1,7 @@
 ---
 title: "Divorce laws and intimate partner violence: Evidence from Mexico"
 subtitle: Aixa García-Ramos (2021)
-author: "Samantha Cerrvantes, Luis Fierro, Coral Hernández, Alfredo Lefranc, Marco Ramos"
+author: "Samantha Cervantes, Luis Fierro, Coral Hernández, Alfredo Lefranc, Marco Ramos"
 date: "abril 2021"
 output:
   xaringan::moon_reader:
@@ -27,41 +27,6 @@ style_mono_accent(
 ```
 
 
-### Introducción
-
-La relación AC, clima e ingreso se analiza en dos sentidos:
-
-+ Margenes intensivos: $(C_{electricity}|AC)= f( X_{temp})$
-
-+ Márgenes extensivos: $AC= f(X_{temp},X_{income})$
-
-
-
-Nota: En adelante, los títulos quedaron muy grandes (hay que agregarles uno o dos "#")
-
----
-
-# Margenes intensivos
-
-Efectos fijos:
-
-$$ln(y_{it})=\sum_j \alpha_jTEMP_{itj}+\beta RAIN_{it}+\gamma_i+\omega_t+\epsilon_{it}$$
-donde:
-
-+ $y_{it}$: consumo de electricidad del hogar t en el ciclo de cobro i.
-
-+ TEMP: cantidad de días en los que la temperatura promedio estuvo en cada cateogría
-
-+ $i$: ciclo de cobro de la luz
-
-+ RAIN: variable de control sobre los días de lluvia durante el ciclo.
-
-+ $\gamma_i$: efectos fijos de cada hogar
-
-+ $\omega_i$: otros efectos fijos generales
-
-
----
 <div style="text-align: justify">
 
 # Estrategia de Identificación: DiD
@@ -70,7 +35,8 @@ donde:
 La autora utiliza dos especificaciones: una general (antes y después) y una donde observa el período después de tratamiento a corto y largo plazo.
 En la primera, hace un *pool* de las cuatro olas y calcula un MPL:
 --
-$$IPV_{ist} = \gamma_s+ \delta (\text{Reform}_st) + X_{ist}\beta +\alpha_{s} +\miu_{t} + \epsilon_{ist} $$
+
+$$IPV_{ist} = \gamma+ \delta (\text{Reform}_st) + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
 donde nuestro coeficiente de interés es $\delta$**, y:
 
@@ -85,7 +51,7 @@ $X_{ist}$ incluye covariables a nivel individual, de la pareja, y del hogar.
 ---
 $\alpha_{s}$ es el *vector de efectos fijos (EF)* que controla por el estado de residencia de la mujer
 
-$\miu_{t}$ es el vector de EF de tiempo de la encuesta
+$\mu_{t}$ es el vector de EF de tiempo de la encuesta
 
 Se utilizan *wild cluster bootstrap standard errors*
 
@@ -94,9 +60,8 @@ Se utilizan *wild cluster bootstrap standard errors*
 
 Ahora, se analizará el período post-tratamiento a corto y largo plazo. 
 
-#####helppp no sé hacer el in line de esta
 
-$$IPV_{ist} = \gamma_s+ \delta (\text{Reform}_st) + X_{ist}\beta +\alpha_{s} +\miu_{t} + \epsilon_{ist} $$
+$$IPV_{ist} = \gamma + \sum_{k=1}^2 \delta_k Reform_{st}^k + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
 donde
 
@@ -119,7 +84,7 @@ Problema: solo dos observaciones para el período de largo plazo
 ---
 # Resultados
 
-Mostraremos los resultados de aumentar la facilidad/disminuir el costo del divorcio en tres partes:
+Mostraremos los resultados de facilitar/disminuir el costo del divorcio en tres partes:
 
 * Efecto en matrimonio y divorcio
 
@@ -165,27 +130,139 @@ Observamos:
 ![Fig 2](TablaB2.png) ![Fig 3](TablaC3.png)
 
 ---
-# Geographical Pattern of Air Conditioning saturation by state in Mexico
+## Tests de Robustez
 
-![Fig 1](img/s3.png)
+## *Propongo sintetizar en palabras todos menos el de reporting behaviour.*
+
+<div style="text-align: justify">
+
++ Se valida el supuesto de tendencias paralelas mediante un caso de estudio y un test de falsificación adicional.
+
++ La autora da validez a la estrategia de identificación al evaluar diferentes factores que podrían agregar variación no aleatoria en el tiempo y afectar sus estimaciones:
+  
+  + Aprobación de la ley de "divorcio necesario" en el 2015 a nivel federal.
+  + Aprobación de leyes estatales contra la violencia doméstica en el periodo de estudio.
+  + La despenalización del aborto en la CDMX.
+  + Agregar controles que aproximen por tendencias macroeconómicas, de violencia general, y de equidad de género y nivel de progresividad del estado.
+  + Diferencias en la variación temporal de los controles entre control y tratamiento.
+  
+Ninguno de estos factores produce un cambio relevante en sus resultados.
+
+???
+
+Igual mencionar acá que metimos casi todos los tests de robustez en el apéndice por si les llama la atención algún resultado y quieren verlo en tabla. Pa que no se espanten que lo resumimos todo.
+
+---
+## Tests de Robustez
+
+<div style="text-align: justify">
+
++ Otra preocupación de la autora es el tamaño de su muestra a nivel estatal (32 estados) y temporal (4 encuestas). Por ello, contrasta sus resultados al cambiar sus grupos de control y tratamiento. A pesar de observar cambios menores en sus coeficientes y errores estándar, cada variación que propone la lleva a las mismas conclusiones.
+
++ Adicionalmente, considera la posibilidad de que sus resultados presenten sesgos por otras razones como:
+
+  + migración interestatal
+  + errores de medición en la composición de su muestra de mujeres casadas o de su variable dependiente de ser víctima de VIP
+  + traslape entre la encuesta y los episodios de VIP
+
+???
+
+en cambios de grupo de control y tratamiento, también mencionar la col5 de la b11, o sea mujeres que viven con otras mujeres en los estados de tratamiento como grupo control.
+Y las estimaciones exluyendo a un estado a la vez.
+
+---
+## Tests de robustez: VIP vivida vs VIP reportada
+
+<div style="text-align: justify">
+
++ Recordemos que los datos provienen de una encuesta, es decir, son reportados por las propias víctimas.
+
++ Los resultados podrían estar afectados por cambios en la forma de reportar la información. No obstante, la ENDIREH sigue las guías de la OMS. En la entrevista se evita la palabra violencia y abuso, es llevada a cabo de forma privada y por mujeres capacitadas.
+
++ Aún así, la autora estima el impacto de leyes de divorcio en la probabilidad de reportar VIP a una autoridad. Esta relación tiene el problema de presentar un sesgo de selección: sólo las mujeres que son víctimas de VIP van a reportar episodios de VIP.
+
++ Se plantea un modelo de selección de Heckman usando en la primera etapa como regresora de la probabilidad de ser víctima un indicador de si el esposo vivió episodios de violencia en la infancia.
 
 ---
 
----
-# Margenes intensivos
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("img/b14.jpg")
+```
 
-![Fig 1](img/a.png)
+<div style="text-align: justify">
 
-
----
-# Margenes intensivos
-
-![Fig 1](img/h.png)
+*La probabilidad de reportar cae en los estados donde se introducen reformas al divorcio*. Esto implica que los resultados están sesgados a la baja y podrían interpretarse como una cota inferior.
 
 ---
-# Margenes intensivos
+## Mecanismos
 
-![Fig 1](img/f.png)
+---
+## Efectos heterogéneos
+
+
+---
+## Conclusión
+
+
+---
+## Anexo: Tablas y Gráficas Adicionales
+
+### Tendencias paralelas? Caso de estudio - impacto del facilitar divorcio en VIP
+```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/fig2.jpg")
+```
+
+---
+### Efecto de facilitar divorcio en violencia perpetrada por desconocidos
+
+```{r, echo=FALSE, out.width="75%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/b7.jpg")
+```
+
+---
+### Efecto de facilitar el divorcio en VIP - Factores de confusión potenciales, muestra de mujeres casadas
+
+```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/tabla5.jpg")
+```
+
+
+---
+### Efecto de facilitar divorcio en VIP - grupos de control y tratamiento alternativos
+
+```{r, echo=FALSE, out.width="95%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/tabla6.jpg")
+```
+
+---
+### Efecto de faciliar el divorcio en las tasas de migración interestatales
+
+
+```{r, echo=FALSE, out.width="75%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/b10.jpg")
+```
+
+---
+### Pruebas de robustez adicionales
+
+
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("img/b11.jpg")
+```
+
+---
+### Efecto de facilitar el divorcio en VIP - muestra restringida por valores faltantes
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("img/b13.jpg")
+```
+
+
+---
+
+```{r, echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("img/c6.jpg")
+```
+
 ---
 # Margenes intensivos
 
@@ -217,10 +294,7 @@ De acuerdo con la información disponible para ese año, el 99% de los hogares r
 
 Respecto a la adopción de **aire acondicionado** el 13% del hogares reportó tener al menos uno. La "saturación" por estado tiene un patrón geográfico claramente concentrado en el noroeste, noreste y algunos estados del sureste. 
 
----
-# Geographical Pattern of Air Conditioning saturation by state in Mexico
 
-![Fig 1](img/s3.png)
 
 ---
 # Geografía, Aire y Economía
@@ -255,15 +329,6 @@ Para explorar esta hipótesis los autores presentan dos figuras comparando el in
 
 El punto de quiebre es la media del número de "cooling degree days" (CDDs). El ingreso está expresado en dólares y graficado con una transformación logarítimica tiene forma de una distribución normal. 
 
----
-# The Extensive Margin - Municipios Fríos 
-
-![Fig 1](img/c.png)
-
----
-# The Extensive Margin - Municipios Calurosos
-
-![Fig 1](img/b.png)
 
 ---
 # The Extensive Margin - Ingreso y Aire
@@ -279,12 +344,6 @@ El posible conflicto de estas figuras es que la división entre "frío" y "calur
 
 Estos hallazgos también se pueden comprobar de manera econonométrica usando como variable dependiente una dummy que indique si el hogar tiene aire acondicionado o no. Con la finalidad de probar la robustez del análisis los autores presentan estimaciones de un modelo lineal de probabilidad simple con ingreso, con gasto como proxy de ingreso, con efectos fijos por región y estado e incluso un término cuadrático para precipitación. Un par de regresiones emplean el modelo de tipo probit.  
 
----
-
-# The Extensive Margin - Estimaciones
-
-![Fig 1](img/s1.png)
-Los modelos se dividen: a) de 1-6 con ingreso y clima; b) de 7 a 12 con la interacción del ingreso con la dummy de municipio de clima caluroso. Los incrementos en la *x* son de $10,000 dllrs.
 
 ---
 # The Extensive Margin - Discusión
@@ -313,73 +372,11 @@ la adquisición de nuevos aparatos de enfriamiento (extensivo). Los efectos fuer
 Utilizando los efectos estimados, los autores estiman el incremento
 en la demanda por electricidad (y emisión de gases invernadero) por parte de los hogares.
 ---
-# Forecasting End of Century Energy Use
-## Predicción de Temperaturas
+## Forecasting End of Century Energy Use
+### Predicción de Temperaturas
 Los autores generaron una serie con las temperaturas para cada municipio del país al final del siglo. 
 Esto se logró utilizando temperaturas actuales y sumándoles los cambios en las temperaturas de cada mes que se esperan según las predicciones encontradas en *Climate Wizard* (http://www.climatewizard.org) para dos escenarios (RCP 4.5 y 8.5). 
 
-```{r, echo=FALSE, out.width="50%", fig.cap="Cambios en la distribución del promedio de temperaturas diarias (RCP 8.5).", fig.align="center"}
-knitr::include_graphics("img/d.png")
-```
-
----
-
-# Forecasting End of Century Energy Use
-## Predicciones del margen intensivo
-
-Utilizando la función de respuesta de los hogares con respecto al clima/temperatura y manteniendo constante el nivel de aparatos de enfriamiento (*ceteris paribus*), los autores obtuvieron las siguientes predicciones sobre qué pasará con la demanda por energía:
-
-```{r, echo=FALSE, out.width="95%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/Forecast1.png")
-```
-
----
-# Forecasting End of Century Energy Use
-## Predicciones del margen intensivo + margen extensivo
-
-Para incorporar al análisis el margen extensivo, los autores asumen un crecimiento de 2% en el producto interno bruto de México (PIB == Ingreso). El supuesto implica que el ingreso de las familias (o la economia mexicana) será 4 veces mayor dentro de 70 años. Los resultados obtenidos son los siguientes
-
-```{r, echo=FALSE, out.width="95%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/Forecast2.png")
-```
-
----
-# Forecasting End of Century Energy Use
-
-Al incorporar el efecto del uso extensivo al análisis, podemos observar que los hogares empiezan a adquirir aire acondicionado. Dado que México es un país de ingreso medio, los autores esperan que este efecto no se observe solo en México, sino que también los demás **países de ingreso medio/bajo empiecen a adquirir una mayor cantidad de equipos de enfriamiento (aires acondicionados)**. Las implicaciones del incremento en la adquisición de aires acondicionado son
-  1. Un incremento en la emisión de dioxido de carbono y producción de energía.
-  2. Un incremento en la inversión para incrementar la capacidad y distribución de energía electrica. 
-  
-Otro hecho importante a destacar es que el **efecto ingreso** es mucho más grande que el de la temperatura. 
-
----
-# Forecasting End of Century Energy Use
-
-```{r, echo=FALSE, out.width="95%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/Forecast3.png")
-```
----
-#Forecasting End of Century Energy Use
-
-En la siguiente tabla se muestran  algunas características para países similares en ingreso que México.
-
-```{r, echo=FALSE, out.width="95%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/e.png")
-```
-
----
-# Conclusiones
-<div style="text-align: justify">
-
-El artículo muestra los enormes impactos potenciales a nivel global de la adopción progresiva del aire acondicionado en los hogares con un enfoque particular en las economías en vías de desarrollo. En días calurosos, la evidencia muestra que existen aumentos importantes en el consumo de energía. 
-
---
-
-Sin embargo, el aporte de este texto se encuentra en la inclusión del ingreso como variable relevante entre la adopción de este tipo de aparatos y el clima. Las estimaciones encuentran que con aumentos en los recursos dentro del hogar, la probabilidad de adquirir un aire acondicionado es alta. Inclusive las predicciones del artículo muestran una cobertura prácticamente universal en zonas calurosas en las décadas posteriores a la fecha de publicación.
-
-```{r, echo=FALSE, out.width="40%", fig.align="center"}
-knitr::include_graphics("img/ac.png")
-```
 
 ---
 # Conclusiones
