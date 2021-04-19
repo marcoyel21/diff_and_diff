@@ -253,17 +253,6 @@ knitr::include_graphics("img/b14.jpg")
 *La probabilidad de reportar cae en los estados donde se introducen reformas al divorcio*. Esto implica que los resultados están sesgados a la baja y podrían interpretarse como una cota inferior.
 
 ---
-## Mecanismos
-
----
-## Efectos heterogéneos
-
-
----
-## Conclusión
-
-
----
 ## Anexo: Tablas y Gráficas Adicionales
 
 ### Tendencias paralelas? Caso de estudio - impacto del facilitar divorcio en VIP
@@ -323,8 +312,81 @@ knitr::include_graphics("img/c6.jpg")
 ```
 
 ---
+### Mecanismos
+
+# *diagrama: easier divorce -> IPV -> afecta a matrimonios que se disuelven -> matrimonios que se disuelven
+
 
 ---
-# Conclusiones
+### Mecanismos: efectos de reforma en VIP y estado civil
+
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("Tabla7.jpg")
+```
+
+---
+### Mecanismos: matrimonios intactos
+
+# *Diagrama: inspecciona dos mecanismos. ya que IPV observado es en matrimonios intactos. IPV -> mecanismo para prevenir que dejen matrimonio ó IPV -> triggereado por variables afectadas por la reforma
+
+---
+### Mecanismos: IPV como instrumento de control
+
+Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, mas que este status haya cambiado al paso del tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años. 
+
+En el corto plazo, puede haber herramientas no violentas para persuadirlas a quedarse en él:
+
+* Redistribución de recursos hacia ellas
+* Amenazas (??)
+* Comportamiento afectivo
+
+Mas estas pueden dejar de ser efectivas, comenzando el IPV. Su ocurrencia y la intención de divorciarse parecen ser independientes del nivel educativo de la mujer. 
+
+---
+## Mecanismos: IPV como instrumento de control
+
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("Tabla8.jpg")
+```
+---
+## Mecanismos: IPV y variables externas
+
+La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VIP. A su vez, estos mecanismos se pudieron haber activado de forma retardada. 
+
+La autora usa dos proxies económicas:
+
+* Probabilidad de que las mujeres trabajen
+* Salarios de las mujeres 
+
+y dos de actitudes:
+* Rechazo de la mujer hacia el IPV
+* Si está considerando divorciarse
+
+---
+## Mecanismos: IPV y variables externas
+
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("TablaB17.jpg")
+```
+
+---
+### Conclusiones
 <div style="text-align: justify">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
