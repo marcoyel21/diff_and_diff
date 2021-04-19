@@ -370,7 +370,14 @@ knitr::include_graphics("TablaB17.jpg")
 ```
 
 ---
-### Conclusiones
+### Posibles variables omitidas: características psicológicas del hombre
+
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("TablaB16.jpg")
+```
+
+---
+### Limitaciones..
 <div style="text-align: justify">
 
 
