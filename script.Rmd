@@ -60,7 +60,6 @@ Se utilizan *wild cluster bootstrap standard errors*
 
 Ahora, se analizará el período post-tratamiento a corto y largo plazo. 
 
-
 $$IPV_{ist} = \gamma + \sum_{k=1}^2 \delta_k Reform_{st}^k + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
 donde
@@ -78,8 +77,6 @@ $Reform_{st}$ es igual a 2 si el estado ha estado expuesto a dos olas;
 * Ciudad de México e Hidalgo en 2016
 
 $\delta_2$ mide el efecto de **largo plazo**, o de 6-8 años después de la reforma.
-
-Problema: solo dos observaciones para el período de largo plazo
 
 ---
 # Resultados
@@ -113,6 +110,9 @@ Usando datos de diversas fuentes de 1998-2016, estima:
 
 * Incremento de 0.3 pp - 19% de la media en los ET antes de la reforma - en la proporción de mujeres divorciadas en ET relativo a antes de la reforma
 
+```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/Tabla2.jpg")
+```
 ![Fig 1](Tabla2.png)
 
 ---
@@ -128,6 +128,65 @@ Observamos:
 * Incremento en 38% del número de divorcios por cada 1000 personas casadas en ET vs EC
 
 ![Fig 2](TablaB2.png) ![Fig 3](TablaC3.png)
+
+---
+## Efecto en VIP
+
+```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/Tabla3.jpg")
+```
+Panel A: Modelo estático
+
+$$IPV_{ist} = \gamma+ \delta (\text{Reform}_st) + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
+
+Panel B: Modelo dinámico
+
+$$IPV_{ist} = \gamma + \sum_{k=1}^2 \delta_k Reform_{st}^k + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
+## *Duda. poner en la foto comentarios de las especificaciones (?).*
+---
+## Efecto en VIP
+
+El 89% de la muestra se compone de mujeres que estaban casadas al momento de la reforma y que continuaban casadas al momento de la encuesta.
+
+Analizar el efecto en las mujeres aún casadas tiene dos ventajas:
+1. Fueron encuestadas en el 2003, agregando un punto de tiempo
+2. Se incorporan controles de sus parejas
+
+* Solo se nota incremento estadísticamente significativo de IPV a largo plazo (CDMX e Hidalgo en 2016)
+
+* **El aumento es de 21% respecto a la media de VIP en ET**, **24%** si consideramos *solo* a las mujeres aún casadas.
+
+* Presencia de controles *no* cambia los resultados (incluyendo nivel de educación y número de hijos)
+  * Agregar tendencias de tiempo de los estados muestra un aumento de 31%. Sin embargo, su estimación es imprecisa
+
+---
+### Efecto en VIP
+
+#*ojo así no va a estar. a ver si hago un diagrama o algo
+
+Existe un problema potencial: solo dos observaciones para estimar el coeficiente de largo plazo. 
+(cluster robust se/ wild cluster bootstrap) -> robust cluster -> under rejects / wild -> restricted -> under rejects -> unrestricted -> overrejects
+compute wild bootstrap p values three procedures 1.- cluster (state) 2.- subcluster (state-year) 3.- ordinary (no cluster)
+compare restricted and unrestricted of each of them
+Si resultados son similares -> validez de approach (de cuál?)
+Diferencias de p value se van haciendo más chicas -> por facilidad, usa restricted p values
+--
+Utiliza método de *wild cluster bootstrap* restringido
+
+Este tiende a sub-rechazar, por lo que se toman como estadistícamente significativos valores-p del .1
+
+---
+### Efecto en VIP
+
+```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/Tabla4.jpg")
+```
+El único cambio a corto plazo fue una disminución en la violencia sexual del 14% respecto a la media muestral. 
+
+Los cambios que se dieron respecto a la media de lo ET a largo plazo fueron:
+
+* Emocional: 23%
+* Económica: 14% 
 
 ---
 ## Tests de Robustez
