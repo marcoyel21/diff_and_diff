@@ -29,26 +29,28 @@ style_mono_accent(
 
 <div style="text-align: justify">
 
-# Estrategia de Identificación: DiD
+## Estrategia de Identificación: DiD
 ## Primera especificación
 
 La autora utiliza dos especificaciones: una general (antes y después) y una donde observa el período después de tratamiento a corto y largo plazo.
 En la primera, hace un *pool* de las cuatro olas y calcula un MPL:
 --
 
-$$IPV_{ist} = \gamma+ \delta (\text{Reform}_st) + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
+$$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
-donde nuestro coeficiente de interés es $\delta$**, y:
+donde nuestro coeficiente de interés es $\mathbf{\delta}$, y:
 
 *ist* se refiere a la mujer *i* viviendo es el estado *s* en el año de la encuesta *t*,
 
 $IPV_{ist}$ indica si la mujer sufrió algún IPV en los últimos doce meses,
 
-$Reform_{ist}$ toma el valor de 1 si la reforma fue aprobada en el año de la encuesta *t*
+$Reform_{st}$ toma el valor de 1 si la reforma fue aprobada en el año de la encuesta *t*
 
 $X_{ist}$ incluye covariables a nivel individual, de la pareja, y del hogar.
 
 ---
+$$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
+
 $\alpha_{s}$ es el *vector de efectos fijos (EF)* que controla por el estado de residencia de la mujer
 
 $\mu_{t}$ es el vector de EF de tiempo de la encuesta
@@ -64,7 +66,7 @@ $$IPV_{ist} = \gamma + \sum_{k=1}^2 \delta_k Reform_{st}^k + X_{ist}\beta +\alph
 
 donde
 
-$Reform_{st}$ es igual a 1 si el estado ha estado expuesto a solo una ola: 
+$Reform_{st}^1$ es igual a 1 si el estado ha estado expuesto a solo una ola: 
 
 * Ciudad de México e Hidalgo en 2011
 
@@ -72,7 +74,7 @@ $Reform_{st}$ es igual a 1 si el estado ha estado expuesto a solo una ola:
 
 $\delta_1$ mide el efecto de **corto plazo**, o hasta 5 años después de la reforma.
 
-$Reform_{st}$ es igual a 2 si el estado ha estado expuesto a dos olas;
+$Reform_{st}^2$ es igual a 2 si el estado ha estado expuesto a dos olas;
 
 * Ciudad de México e Hidalgo en 2016
 
@@ -81,18 +83,20 @@ $\delta_2$ mide el efecto de **largo plazo**, o de 6-8 años después de la refo
 ---
 # Resultados
 
-Mostraremos los resultados de facilitar/disminuir el costo del divorcio en tres partes:
+Mostraremos los resultados de facilitar/disminuir el costo del divorcio en cuatro partes:
 
-* Efecto en matrimonio y divorcio
+1. Efectos en el matrimonio y divorcio
 
-* Efecto en la VIP
+2. Efectos en la VIP
 
-* Tests de robustez
+3. Tests de robustez
+
+4. Mecanismos
 
 ---
-#  Efecto en matrimonio y divorcio
+##  Efectos en el matrimonio y divorcio
 
-## Divorcios
+### Divorcios
 
 Usando datos de diversas fuentes de 1998-2016, estima:
 
@@ -100,7 +104,7 @@ Usando datos de diversas fuentes de 1998-2016, estima:
 
 * Efecto persistente en período de post-tratamiento (10 años aprox.)
 
-![Fig 2](TablaB2.png) ![Fig 3](TablaC3.png)
+![Fig 2](img/TablaB2.jpg) ![Fig 3](img/TablaC3.jpg)
 
 *ET: estados tratados*
 
@@ -113,7 +117,7 @@ Usando datos de diversas fuentes de 1998-2016, estima:
 ```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla2.jpg")
 ```
-![Fig 1](Tabla2.png)
+
 
 ---
 ##  Matrimonios
@@ -127,17 +131,17 @@ Observamos:
 
 * Incremento en 38% del número de divorcios por cada 1000 personas casadas en ET vs EC
 
-![Fig 2](TablaB2.png) ![Fig 3](TablaC3.png)
+![Fig 2](img/TablaB2.jpg) ![Fig 3](img/TablaC3.jpg)
 
 ---
 ## Efecto en VIP
 
-```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="80%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla3.jpg")
 ```
 Panel A: Modelo estático
 
-$$IPV_{ist} = \gamma+ \delta (\text{Reform}_st) + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
+$$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
 Panel B: Modelo dinámico
 
@@ -178,7 +182,7 @@ Este tiende a sub-rechazar, por lo que se toman como estadistícamente significa
 ---
 ### Efecto en VIP
 
-```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla4.jpg")
 ```
 El único cambio a corto plazo fue una disminución en la violencia sexual del 14% respecto a la media muestral. 
@@ -250,11 +254,86 @@ knitr::include_graphics("img/b14.jpg")
 
 <div style="text-align: justify">
 
-*La probabilidad de reportar cae en los estados donde se introducen reformas al divorcio*. Esto implica que los resultados están sesgados a la baja y podrían interpretarse como una cota inferior.
+\begin{align*}
+\color{#4B5C96}{\textbf{La probabilidad de reportar cae en los estados donde}} \\
+\color{#4B5C96}{\textbf{se introducen reformas al divorcio.}}
+\end{align*}
+Esto implica que los resultados están sesgados a la baja y podrían interpretarse como una cota inferior.
+
+---
+### Mecanismos
+
+# *diagrama: easier divorce -> IPV -> afecta a matrimonios que se disuelven -> matrimonios que se disuelven
+
+
+---
+### Mecanismos: efectos de reforma en VIP y estado civil
+
+```{r, echo=FALSE, out.width="70%", fig.align="center"}
+knitr::include_graphics("img/Tabla7.jpg")
+```
+
+---
+### Mecanismos: matrimonios intactos
+
+# *Diagrama: inspecciona dos mecanismos. ya que IPV observado es en matrimonios intactos. IPV -> mecanismo para prevenir que dejen matrimonio ó IPV -> triggereado por variables afectadas por la reforma
+
+---
+### Mecanismos: IPV como instrumento de control
+
+Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, mas que este status haya cambiado al paso del tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años. 
+
+En el corto plazo, puede haber herramientas no violentas para persuadirlas a quedarse en él:
+
+* Redistribución de recursos hacia ellas
+* Amenazas (??)
+* Comportamiento afectivo
+
+Mas estas pueden dejar de ser efectivas, comenzando el IPV. Su ocurrencia y la intención de divorciarse parecen ser independientes del nivel educativo de la mujer. 
+
+---
+### Mecanismos: IPV como instrumento de control
+
+```{r, echo=FALSE, out.width="35%", fig.align="center"}
+knitr::include_graphics("img/Tabla8.jpg")
+```
+---
+## Mecanismos: IPV y variables externas
+
+La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VIP. A su vez, estos mecanismos se pudieron haber activado de forma retardada. 
+
+La autora usa dos proxies económicas:
+
+* Probabilidad de que las mujeres trabajen
+* Salarios de las mujeres 
+
+y dos de actitudes:
+* Rechazo de la mujer hacia el IPV
+* Si está considerando divorciarse
+
+---
+## Mecanismos: IPV y variables externas
+
+```{r, echo=FALSE, out.width="65%", fig.align="center"}
+knitr::include_graphics("img/TablaB17.jpg")
+```
+
+---
+### Posibles variables omitidas: características psicológicas del hombre
+
+```{r, echo=FALSE, out.width="55%", fig.align="center"}
+knitr::include_graphics("img/TablaB16.jpg")
+```
+
+---
+### Limitaciones..
+<div style="text-align: justify">
+
 
 ---
 ## Anexo: Tablas y Gráficas Adicionales
 
+---
 ### Tendencias paralelas? Caso de estudio - impacto del facilitar divorcio en VIP
 ```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/fig2.jpg")
@@ -306,79 +385,12 @@ knitr::include_graphics("img/b13.jpg")
 
 
 ---
+### Efecto de facilitar el divorcio en VIP - Quitando un estado a la vez
 
 ```{r, echo=FALSE, out.width="95%", fig.align="center"}
 knitr::include_graphics("img/c6.jpg")
 ```
 
----
-### Mecanismos
-
-# *diagrama: easier divorce -> IPV -> afecta a matrimonios que se disuelven -> matrimonios que se disuelven
-
-
----
-### Mecanismos: efectos de reforma en VIP y estado civil
-
-```{r, echo=FALSE, out.width="75%", fig.align="center"}
-knitr::include_graphics("Tabla7.jpg")
-```
-
----
-### Mecanismos: matrimonios intactos
-
-# *Diagrama: inspecciona dos mecanismos. ya que IPV observado es en matrimonios intactos. IPV -> mecanismo para prevenir que dejen matrimonio ó IPV -> triggereado por variables afectadas por la reforma
-
----
-### Mecanismos: IPV como instrumento de control
-
-Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, mas que este status haya cambiado al paso del tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años. 
-
-En el corto plazo, puede haber herramientas no violentas para persuadirlas a quedarse en él:
-
-* Redistribución de recursos hacia ellas
-* Amenazas (??)
-* Comportamiento afectivo
-
-Mas estas pueden dejar de ser efectivas, comenzando el IPV. Su ocurrencia y la intención de divorciarse parecen ser independientes del nivel educativo de la mujer. 
-
----
-## Mecanismos: IPV como instrumento de control
-
-```{r, echo=FALSE, out.width="75%", fig.align="center"}
-knitr::include_graphics("Tabla8.jpg")
-```
----
-## Mecanismos: IPV y variables externas
-
-La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VIP. A su vez, estos mecanismos se pudieron haber activado de forma retardada. 
-
-La autora usa dos proxies económicas:
-
-* Probabilidad de que las mujeres trabajen
-* Salarios de las mujeres 
-
-y dos de actitudes:
-* Rechazo de la mujer hacia el IPV
-* Si está considerando divorciarse
-
----
-## Mecanismos: IPV y variables externas
-
-```{r, echo=FALSE, out.width="75%", fig.align="center"}
-knitr::include_graphics("TablaB17.jpg")
-```
-
----
-### Posibles variables omitidas: características psicológicas del hombre
-
-```{r, echo=FALSE, out.width="75%", fig.align="center"}
-knitr::include_graphics("TablaB16.jpg")
-```
-
----
-### Limitaciones..
-<div style="text-align: justify">
 
 
 
