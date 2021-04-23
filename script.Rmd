@@ -38,81 +38,95 @@ En la primera, hace un *pool* de las cuatro olas y calcula un MPL:
 
 $$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
-donde nuestro coeficiente de interés es $\mathbf{\delta}$, y:
+--
+donde nuestro coeficiente de interés es **$\mathbf{\delta}$**, y:
 
-*ist* se refiere a la mujer *i* viviendo es el estado *s* en el año de la encuesta *t*,
+$ist$ se refiere a la mujer $i$ viviendo en el estado $s$ en el año de la encuesta $t$,
 
-$IPV_{ist}$ indica si la mujer sufrió algún IPV en los últimos doce meses,
+$IPV_{ist}$ indica si la mujer sufrió algún tipo de VP en los últimos doce meses,
 
-$Reform_{st}$ toma el valor de 1 si la reforma fue aprobada en el año de la encuesta *t*
+$Reform_{st}$ toma el valor de 1 si la reforma fue aprobada en el año de la encuesta $t$
 
 $X_{ist}$ incluye covariables a nivel individual, de la pareja, y del hogar.
 
 ---
+## Primera especificación
+
+
 $$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
 $\alpha_{s}$ es el *vector de efectos fijos (EF)* que controla por el estado de residencia de la mujer
 
 $\mu_{t}$ es el vector de EF de tiempo de la encuesta
 
-Se utilizan *wild cluster bootstrap standard errors*
+En primera instancia, utiliza errores estándar agrupados *por estado*, permitiendo que los shocks no observables dentro de ellos estén correlacionados.
+
+Sin embargo, cuando el número de clusters es chico (32), las pruebas T suelen sobre-rechazar. Su solución es utilizar *wild cluster bootstrap standard errors*.
 
 ---
 ## Segunda especificación
 
-Ahora, se analizará el período post-tratamiento a corto y largo plazo. 
+Ahora, se analizará el período post-tratamiento a corto y largo plazo: 
 
 $$IPV_{ist} = \gamma + \sum_{k=1}^2 \delta_k Reform_{st}^k + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
-donde
+en $Reform_{st}^k$, $k$ indica el número de olas que han pasado en los estados desde que pasó la reforma. 
 
-$Reform_{st}^1$ es igual a 1 si el estado ha estado expuesto a solo una ola: 
+$k=1$ si el estado ha estado expuesto a solo una ola: 
 
 * Ciudad de México e Hidalgo en 2011
 
 * Resto de los estados en 2016
 
-$\delta_1$ mide el efecto de **corto plazo**, o hasta 5 años después de la reforma.
+**$\delta_1$** mide el efecto de **corto plazo**, o hasta 5 años después de la reforma.
 
-$Reform_{st}^2$ es igual a 2 si el estado ha estado expuesto a dos olas;
+$k=2$ si el estado ha estado expuesto a dos olas;
 
 * Ciudad de México e Hidalgo en 2016
 
-$\delta_2$ mide el efecto de **largo plazo**, o de 6-8 años después de la reforma.
+**$\delta_2$** mide el efecto de **largo plazo**, o de 6-8 años después de la reforma.
 
 ---
-# Resultados
+## Resultados
 
 Mostraremos los resultados de facilitar/disminuir el costo del divorcio en cuatro partes:
 
-1. Efectos en el matrimonio y divorcio
+1. Efectos en el matrimonio y divorcioS
 
-2. Efectos en la VIP
+2. Efectos en la VP
 
 3. Tests de robustez
 
 4. Mecanismos
 
 ---
-##  Efectos en el matrimonio y divorcio
-
-### Divorcios
+##  Efectos en divorcios
 
 Usando datos de diversas fuentes de 1998-2016, estima:
 
-* Aumento en la tasa de divorcio en 34% - 0.24 respecto al promedio en ET antes de la reforma
+* Aumento en la tasa de divorcio en 34% - 0.24 respecto a la tasa de divorcios promedio en ET antes de la reforma
+
+
+![Fig 2](img/TablaB2.jpg)
+
+
+---
+##  Efectos en divorcios
+
 
 * Efecto persistente en período de post-tratamiento (10 años aprox.)
 
-![Fig 2](img/TablaB2.jpg) ![Fig 3](img/TablaC3.jpg)
+![Fig 3](img/TablaC3.jpg)
+
 
 *ET: estados tratados*
 
+
 ---
 
-## Modelo MPL 
+## Divorcios: modelo MPL 
 
-* Incremento de 0.3 pp - 19% de la media en los ET antes de la reforma - en la proporción de mujeres divorciadas en ET relativo a antes de la reforma
+* Incremento de 19% - 0.3 pp en la proporción de mujeres divorciadas en los ET a antes de la reforma
 
 ```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla2.jpg")
