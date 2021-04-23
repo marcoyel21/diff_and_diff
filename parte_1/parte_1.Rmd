@@ -1,0 +1,224 @@
+---
+title: "Reporte parte 1"
+author: "Marco y Luis"
+date: "4/18/2021"
+output: html_document
+---
+\tableofcontents
+\newpage
+
+# I Motivar diciendo por qué el tema que cubre el paper es importante.
+
+A priori sabemos, o pensamos, que mejorar el acceso a divorico empodera a las personas con mayor voluntad o *willingness* de terminar un matrimonio, la gran mayoría de las veces las mujeres. Y hay mucha evidencia empirica y analitica que sostiene esto y que incluso afirma que reducen las consecuencias negativas de un mal matrimonio por ejemplo la violencia domestica. Lamentablemente, la mayoria de estos estudios se han realizado en países desarrollados, donde una ley se traduce inmediatamente en empoderación para los beneficiarios y donde la ley también es la fuente primordial de poder real.
+
+Sin embargo, ¿Que pasa en países en desarrollo? ¿Podemos seguir afirmando la misma relación con certeza? ¿Que pasa en el mediano y largo plazo? Que pasaa en contextos donde el poder de una ley compite con el poder que tiene la cultura (por ejemplo machismo) en el matrimonio. ¿Peor aún, que pasa en contextos donde una dimensión del poder sigue siendo la violencia? La releveancia de este paper recae en que evalua de manera empirica la realción entre matrimonio y violencia domestica en un país en desarrollo, el de nosotros.
+
+# II Relevancia
+
+## Violencia de pareja 
+
++ En el mundo, 1 de cada 3 mujeres han experimentado violencia de pareja (*inter-partner violence*) (Si lo vemos del otro lado, en general, 1 de cada 3  hombres la ha cometido).
+
+Se ha asociado la violencia de pareja a inestabiliad en el  empleo, reducción de productividad y ganancias, a salud deficiente, ademas de externalidades negativas en los hijos.
+
+## Falta certeza sobre su relación con el divorcio
+
++  Modelos analíticos y trabajos empíricos en países desarrollados sostienen que con el divorcio unilateral, como la mujer está mas empoderada, disminuye la violencia.
+
++ Esta tambien el argumento de que la violencia puede aumentar si el hombre sigue gozando de poder factico y ve al divorcio como un riesgo de que su esposa "escape".
+
++ Entre estas posturas está la respuesta, los modelos asumen que no hay fricciones de valores culturales. Es decir, un avance legal en la equidad de genero se traduce en un avance real.
+
++ Los estudios empiricos que se han hecho, comprueban que efectivamente hay una reduccion de violencia pero ¡sorpresa!, estos se han hecho en paises desarrollados.
+
++ A grandes rasgos en paises en desarrollo hay mayor prevalencia de violencia (de cualquier tipo) y el divorico es menos aceptado culturamente. Asimismo, hay menor apoyo a victimas y mas dificultades en cuando a sostener arreglos judiciales, como el pago de manuntencion.
+
+
+# III Puntualmente mencionar qué pregunta(s) pretende contestar el 
+
+Debido a lo expuesto anteriormente, que surja la pregunta:
+
+¿Existe una relación entre facilitar el acceso al divorcio y la violencia de pareja en México?
+
+
+# IV Dar  información  del  contexto. 
+
+La investigación intenta aprovechae la diversidad de normas en México. En particular, la variación en la implementación del divorcio unilateral. El divorcio unilateral ha sido sucedido por un incremento significante en las tasas de divorcio; un incremento en el acumulado de mujeres divorciadas;  un decremento en el stock de mujeres casadas y finalmente un cambio estadisticamente insiginicante en las tasas de matrimonio (lo cuál me parece muy interesante).
+
+Asimismo hay efectos de corto y mediano plazo. En cuanto a violencia, de 0 a 6 años después de la aprobación de las leyes, la relacion es no significatica pero a partir de 6-8 años vemos un aumento de la violencia en 3-6 por ciento. Estos resultados provenen sobretodo de aquellas mujeres que han seguido casadas despues de la reforma. (La autora sugiere que puede ser que al principio los hombres tengamos herramientas no violentas para disuadir pero en el largo plazo estas son insuficientes)
+
+## Ley 
+
+Ahora evaluemos que fue lo que cambio.
+
++ El divorcio se puede pedir por demanda de una parte (necesario) y por demanda de las dos partes (voluntario). En el primero, se necesita comprobar una causa (como adulterio, abandono).
+
++ Se puede otorgar por convenio o por decición judicial. En el primero, las partes acuerdan basicamente todo (patria potestad, regimen de visitias, manutención, división de bienes, etc); en el segundo, un juez decide.
+
++ La reforma permite que se pueda otorgar el divorcio solicitado por una sola parte sin necesidad de comprobar nada (salvo uno que otro requisito en determinados estados como al menos estar un año de casados)
+
+### Divorcio bilateral (no ha cambiado)
+
+```{r}
+DiagrammeR::grViz("digraph {
+  graph [layout = dot, rankdir = TB]
+  
+  node [shape = rectangle,color=limegreen]        
+  rec1 [label = 'Divorcio bilateral',color=limegreen]
+  rec2 [label = 'Acuerdo',color=limegreen]
+  rec3 [label =  'No acuerdo',color=limegreen]
+  rec4 [label = 'Decisión judicial',color=limegreen]
+  rec5 [label = 'Decisión administrativa',color=limegreen]
+  rec6 [label = 'Divorcio otorgado',color=limegreen]
+
+  
+  # edge definitions with the node IDs
+  rec1 -> rec2  -> rec4
+  rec1 -> rec3 -> rec4-> rec6
+  rec2  -> rec5-> rec6
+  
+  }", 
+  height = 500)
+````  
+
+### Divorcio unilateral (antes y respues de la reforma)
+
+
+```{r}
+DiagrammeR::grViz("digraph {
+  graph [layout = dot, rankdir = TB]
+  
+  node [shape = rectangle]  
+  rec61 [label = 'Divorcio unilateral',color = gold]
+  rec71 [label = 'Acuerdo',color=limegreen]
+  rec81 [label =  'No acuerdo',color=gold]
+  rec91 [label = 'Decisión judicial',color=gold]
+  rec101 [label = 'Decisión administrativa',color=limegreen]
+  rec111 [label = 'Si hay causa',color=limegreen]
+  rec121 [label = 'No hay causa',color=red]
+  rec131 [label = 'Divorcio otorgado',color=limegreen]
+  rec132 [label = 'Divorcio denegado',color=red]
+  
+  rec6 [label = 'Divorcio unilateral',color=limegreen]
+  rec7 [label = 'Acuerdo',color=limegreen]
+  rec8 [label =  'No acuerdo',color=limegreen]
+  rec9 [label = 'Decisión judicial',color=limegreen]
+  rec10 [label = 'Decisión administrativa',color=limegreen]
+  rec11 [label = 'Si hay causa',color=limegreen]
+  rec12 [label = 'No hay causa',color=limegreen]
+  rec13 [label = 'Divorcio otorgado',color=limegreen]
+
+  
+  # edge definitions with the node IDs
+  rec6 -> rec7  -> rec9
+  rec7-> rec10 -> rec13
+  rec6 -> rec8 -> rec9 -> rec11 -> rec13
+  rec9 -> rec12 ->rec13
+  
+  rec61 -> rec71  -> rec91
+  rec71-> rec101 -> rec131
+  rec61 -> rec81 -> rec91 -> rec111 -> rec131
+  rec91 -> rec121 ->rec132
+  
+  }", 
+  height = 500)
+````  
+
+## Nuevo regimen
+
++ La primera reforma se realizó en la CDMX  en agosto 2008.
+
++ En noviembre 2016, 14 otros estados la implementaron, lo cuál nos da un escenario muy oportuno para hacer comparación pues casi nos quedaron grupos de tamaño 50/50.
+
+## Análisis
+
++ Si el consenso mutuo es una opcion entonces la reforma en principio no trae ningun beneficio, debido a que el camino del divorcio administrativo, es preferible al unilateral por el menor tiempo y costo.
+
++ Si la opción es el el judicial y el caso puede optar por unilateral, entonces, si ha reducido los costos en muchos sentidos para las personas que apliquen.
+
++ Otro cambio importante es en cuanto a la compensancion economica. previamente, solo se daba en el caso de fallo judicial y para la parte inocente. Ahora en el unilateral, se hace explicito que debe haber una compensación para la parte que se encargó de la crianza y labores domesticas y para las partes que no adquirieron propiedades o propiedades de valor significativo durante el matrimonio,
+
++ Finalmente de acuerdo a modelos analiticos, se beneficiaria mas de estas medidas la parte con la mayor *willigness* de terminar el matrimonio. Antes y despues de la reforma el 80% de los peticionarios eran mujeres y el 20% hombres.  En datos de la ENDIREH se pregunta a mujeres divorcioadas que vivieron abuso, quien tomo la decicion de separarse y en un 65% de los casos fueron ellas bvs 21% homnbres y 14% ambos
+
+# Conclusión
+
+El hecho de que la reforma se haya hecho en casi la mitad de las entidades federativas en distintos tiempos permite que la relación entre divorcio y violencia de pareja pueda ser analizada bajo un esquema de dif and dif.
+
+# Describir la base de datos (falta ordenar).
+
+Datos
+
+	•	Encuesta y muestra
+	•	La principal fuente de datos es una encuesta transversal nacional y representativa a nivel estatal: ENDIREH 2016 (Encuesta Nacional sobre la Dinámica de las Relaciona en los Hogares).
+	•	Recolecta información a detalle sobre la violencia que sufre la mujer en México.
+	•	Años de recolección:
+	•	2003 (solo representativa en 11 estados) | 34,184
+[Población Obj: Mujeres mayores o igual a 15 años con pareja viviendo en el hogar]
+	•	2006				           | 133,398
+	•	2011				           | 152,636
+	•	2016				           | 111,256
+[Población Obj: Mismo rango de edad, pero para todos los estatus maritales, independientemente si la pareja vive o no en el hogar o ya están divorciadas]
+(La información recolectada fue a través de entrevista del encuestador y la mujer entre octubre y noviembre de esos años).
+	•	La encuesta garantiza la confidencialidad de las entrevistadas, lo cual reduce incertidumbre de sobre posible omisión de información.
+	•	La muestra es compuesta por mujeres casadas durante la reforma y continúan casadas o o estaban divorciadas durante la encuesta. (Afectadas por la reforma).
+	•	Se excluyeron aquellas que se casaron después de la reforma. (no observable antes).
+	
+	
+	
+	•	Características de la mujer casada: (implicaciones ya que en 2003 no se tomó en cuenta esto)
+	•	Mujeres que viven con su pareja.
+	•	Separadas temporalmente (como sí viviera con pareja).
+	•	Separadas definitivamente pero no divorciadas (Como divorciadas).
+	•	Estatus de la relación al momento de la encuesta:
+	•	Duración del matrimonio y/o divorcio.
+	
+	
+	•	La muestra final:
+	•	214,972
+	•	186,584 (casadas después de la reforma).
+	•	2003: 23,333 (todas continuaron casadas).
+	•	2006: 66,157 (59,782 continuaron casadas).
+	•	2011: 74,770 (60,285 continuaron casadas).
+	•	2016: 50,712 (43,184 continuaron casadas).
+	•	Variables
+	
+*En el cuestionario las palabras ‘violencia’ o ‘abuso’ fueron usadas. Esta basado en una guía de la OMS para recolectar información sobre IPV y reducir incertidumbre sobre posible omisión.
+
+Tabla 1.
+	•	29 preguntas comparables en las distintos años que se llevó la encuesta (# preguntas en cada año 29, 30, 30, 36), no obstante, eliminó (poner pregunta) por su subjetividad.
+	•	Las 28 preguntas están divididas en 4 grupos de IPV:
+	•	Física (OMS | dicotómica donde 1 = sufrió violencia en los últimos doce meses en al menos una pregunta).
+	•	Sexual (dicotómica donde 1 = sufrió violencia en los últimos doce meses en al menos una pregunta).
+	•	Emocional (dicotómica donde 1 = sufrió violencia en los últimos doce meses en al menos dos preguntas).
+	•	Económica (dicotómica donde 1 = sufrió violencia en los últimos doce meses en al menos dos preguntas).
+	•	Plus: Cualquiera (dicotómica donde 1 = sufrió cualquier tipo de violencia).
+	•	ENDIREH también recolecta información sobre las características del individuo, pareja y del hogar.
+	•	Controles de la especificación:
+	•	Edad de la mujer
+	•	Raíz indígena de la mujer (mejorar traducción)
+	•	Nivel educativo de la mujer
+	•	Presencia de niños (hijos)
+	•	Número de hijos
+	•	Residencia Urbana
+	•	Estatus socioeconómico
+	
+Especificación restringida (Mujeres aún casadas): 
++ Edad del hombre
++ Raíz indígena del hombre
++ Nivel educativo del hombre
++ Duración del matrimonio
+(Estatus de empleo de la mujer excluida | Incertidumbre en número de niños y nivel educativo)
+*¿Solución? Compararon los datos durante la reforma y en el momento de la encuesta. Mismo nivel educativo en ambos y 90% de las mujeres tenían el mismo número de hijos.
+	•	Se utilizó la variable divorcio para examinar el impacto de esquema unilateral en la tasa de divorcios (cuando ya están concretados). Por cada mil habitantes o mil matrimonios (el numero de divorcios en año t y el número de matrimonios en año t-1).
+	•	Población por estado por la CONAPO. Divorcios por el Inegi (censo 1990, 2000, 2010, 2015*). Extrapolación en caso de no datos.
+	•	También se utilizó la variable la tasa de matrimonios. Por cada mil habitantes.
+	•	Información proveniente del Inegi
+	•	Migración entre estados para ver si el divorcio unilateral  cambió la Inter migración entre hombres y mujeres.
+	•	Tasa de homicidio como proxi de violencia en el estado (Empatado con el ENDIREH). Tasa de homicidios por cada 100 mil habitantes. Información proveniente del Inegi.
+	•	Utilización de ENOE y ENE para construir dos controles:
+	•	Tasa de desempleo como proxy de ciclo económico (Pob desempleada / PEA).
+	•	Brecha de género en la PEA como proxy de igualdad de género.
+	•	Variable categórica de Partido gobernante un año antes de la encuesta (si hubo cambio de partido el que duró más tiempo. Recolectadas por los institutos electorales estatales.
+
+
+
