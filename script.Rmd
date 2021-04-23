@@ -138,18 +138,25 @@ Los cambios que se dieron respecto a la media de lo ET a largo plazo fueron un a
 knitr::include_graphics("img/Tabla4.jpg")
 ```
 ---
-##  Efectos en matrimonios y divorcios
+##  Efectos en matrimonios y divorcios 
 
 <img style="float: right;" src="img/TablaB2.jpg" width="340" height="500">
 
 <div style="text-align: justify">
 
+* Aumento en la tasa de divorcio en 34% respecto a antes de la reforma
+* Incremento de 38% en número de divorcios por cada 1000 personas casadas 
+* No hay evidencia de impacto en el número de matrimonios por cada 1000 personas 
+
 ---
-##  Efectos en matrimonios y divorcios
+##  Efectos en matrimonios y divorcios: MPL
 
 <img style="float: right;" src="img/Tabla2.jpg" width="340" height="500">
 
 <div style="text-align: justify">
+
+* Incremento de 19% en la proporción de mujeres divorciadas respecto a la media de los ET antes de la reforma 
+* Disminución de 3% en la proporción de mujeres casadas respecto a la media de los ET antes de la reforma 
 
 ---
 ##  Efectos en matrimonios y divorcios
@@ -158,47 +165,6 @@ knitr::include_graphics("img/Tabla4.jpg")
 
 <div style="text-align: justify">
 
-
----
-##  Efectos en divorcios
-
-Usando datos de diversas fuentes de 1998-2016, estima:
-
-* Aumento en la tasa de divorcio en 34% - 0.24 respecto a la tasa de divorcios promedio en ET antes de la reforma
-* Efecto persistente en período de post-tratamiento (10 años aprox.) 
-* Incremento de 19% - 0.3 pp en la proporción de mujeres divorciadas en los ET a antes de la reforma
-
----
-##  Efecto en matrimonios
-
-<div style="text-align: justify">
-
-La proporción de la población casada en el país es de 42%. Observamos:
-* No hay evidencia de impacto en número de matrimonios por cada 1000 personas
-
-* Disminución de 3% (respecto a la media) en la proporción de mujeres casadas después de la reforma en ET en comparación a los EC
-
-* Incremento en 38% del número de divorcios por cada 1000 personas casadas en ET vs EC
-
----
-##  Efectos en divorcios: modelo estático
-
-```{r, echo=FALSE, out.width="70%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/TablaB2.jpg")
-```
----
-
-## Divorcios: modelo MPL
-
-```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/Tabla2.jpg")
-```
----
-##  Efectos en divorcios
-
-```{r, echo=FALSE, out.width="70%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/TablaC3.jpg")
-```
 ---
 #### Tests de Robustez - 1. Validar el supuesto de tendencias paralelas
 
