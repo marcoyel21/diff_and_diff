@@ -136,33 +136,24 @@ knitr::include_graphics("img/Tabla2.jpg")
 ---
 ##  Matrimonios
 
-La proporción de la población casada en el país es de 42%. 
-
-Observamos:
+La proporción de la población casada en el país es de 42%. Observamos:
 * No hay evidencia de impacto en número de matrimonios por cada 1000 personas
 
 * Disminución de 3% (respecto a la media) en la proporción de mujeres casadas después de la reforma en ET en comparación a los EC
 
 * Incremento en 38% del número de divorcios por cada 1000 personas casadas en ET vs EC
 
-![Fig 2](img/TablaB2.jpg) ![Fig 3](img/TablaC3.jpg)
+![Fig 2](img/TablaB2.jpg) 
 
 ---
-## Efecto en VIP
+## Efecto en VP
+
 
 ```{r, echo=FALSE, out.width="80%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla3.jpg")
 ```
-Panel A: Modelo estático
-
-$$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
-
-Panel B: Modelo dinámico
-
-$$IPV_{ist} = \gamma + \sum_{k=1}^2 \delta_k Reform_{st}^k + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
-## *Duda. poner en la foto comentarios de las especificaciones (?).*
 ---
-## Efecto en VIP
+## Efecto en VP
 
 El 89% de la muestra se compone de mujeres que estaban casadas al momento de la reforma y que continuaban casadas al momento de la encuesta.
 
@@ -170,42 +161,27 @@ Analizar el efecto en las mujeres aún casadas tiene dos ventajas:
 1. Fueron encuestadas en el 2003, agregando un punto de tiempo
 2. Se incorporan controles de sus parejas
 
-* Solo se nota incremento estadísticamente significativo de IPV a largo plazo (CDMX e Hidalgo en 2016)
+Solo se nota incremento estadísticamente significativo de IPV a largo plazo (CDMX e Hidalgo en 2016)
 
-* **El aumento es de 21% respecto a la media de VIP en ET**, **24%** si consideramos *solo* a las mujeres aún casadas.
+El aumento es de **21%** respecto a la media de VIP en los ET, y **24%** si consideramos *solo* a las mujeres aún casadas.
 
-* Presencia de controles *no* cambia los resultados (incluyendo nivel de educación y número de hijos)
-  * Agregar tendencias de tiempo de los estados muestra un aumento de 31%. Sin embargo, su estimación es imprecisa
-
----
-### Efecto en VIP
-
-#*ojo así no va a estar. a ver si hago un diagrama o algo
-
-Existe un problema potencial: solo dos observaciones para estimar el coeficiente de largo plazo. 
-(cluster robust se/ wild cluster bootstrap) -> robust cluster -> under rejects / wild -> restricted -> under rejects -> unrestricted -> overrejects
-compute wild bootstrap p values three procedures 1.- cluster (state) 2.- subcluster (state-year) 3.- ordinary (no cluster)
-compare restricted and unrestricted of each of them
-Si resultados son similares -> validez de approach (de cuál?)
-Diferencias de p value se van haciendo más chicas -> por facilidad, usa restricted p values
---
-Utiliza método de *wild cluster bootstrap* restringido
-
-Este tiende a sub-rechazar, por lo que se toman como estadistícamente significativos valores-p del .1
+La presencia de controles *no* cambia los resultados **(incluyendo nivel de educación y número de hijos)**
+  * Agregar tendencias de tiempo de los estados muestra un aumento de 31%. Sin embargo, su estimación es imprecisa.
 
 ---
-### Efecto en VIP
+### Efecto en VP
+
+** diagrama 
+---
+### Efecto en VP
+
+A corto plazo fue una disminución en la violencia sexual del 14% respecto a la media muestral. 
+
+Los cambios que se dieron respecto a la media de lo ET a largo plazo fueron un aumento en la violencia emocional de 23% y económica: 14% 
 
 ```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla4.jpg")
 ```
-El único cambio a corto plazo fue una disminución en la violencia sexual del 14% respecto a la media muestral. 
-
-Los cambios que se dieron respecto a la media de lo ET a largo plazo fueron:
-
-* Emocional: 23%
-* Económica: 14% 
-
 ---
 ## Tests de Robustez
 
@@ -281,7 +257,7 @@ Esto implica que los resultados están sesgados a la baja y podrían interpretar
 
 
 ---
-### Mecanismos: efectos de reforma en VIP y estado civil
+### Mecanismos: efectos de reforma en VP y estado civil
 
 ```{r, echo=FALSE, out.width="70%", fig.align="center"}
 knitr::include_graphics("img/Tabla7.jpg")
@@ -293,26 +269,26 @@ knitr::include_graphics("img/Tabla7.jpg")
 # *Diagrama: inspecciona dos mecanismos. ya que IPV observado es en matrimonios intactos. IPV -> mecanismo para prevenir que dejen matrimonio ó IPV -> triggereado por variables afectadas por la reforma
 
 ---
-### Mecanismos: IPV como instrumento de control
+### Mecanismos: VP como instrumento de control
 
 Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, mas que este status haya cambiado al paso del tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años. 
 
 En el corto plazo, puede haber herramientas no violentas para persuadirlas a quedarse en él:
 
 * Redistribución de recursos hacia ellas
-* Amenazas (??)
+* Amenazas 
 * Comportamiento afectivo
 
 Mas estas pueden dejar de ser efectivas, comenzando el IPV. Su ocurrencia y la intención de divorciarse parecen ser independientes del nivel educativo de la mujer. 
 
 ---
-### Mecanismos: IPV como instrumento de control
+### Mecanismos: VP como instrumento de control
 
 ```{r, echo=FALSE, out.width="35%", fig.align="center"}
 knitr::include_graphics("img/Tabla8.jpg")
 ```
 ---
-## Mecanismos: IPV y variables externas
+## Mecanismos: VP y variables externas
 
 La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VIP. A su vez, estos mecanismos se pudieron haber activado de forma retardada. 
 
@@ -326,14 +302,14 @@ y dos de actitudes:
 * Si está considerando divorciarse
 
 ---
-## Mecanismos: IPV y variables externas
+## Mecanismos: VP y variables externas
 
 ```{r, echo=FALSE, out.width="65%", fig.align="center"}
 knitr::include_graphics("img/TablaB17.jpg")
 ```
 
 ---
-### Posibles variables omitidas: características psicológicas del hombre
+### Posibles variables omitidas: características psicológicas de los hombres
 
 ```{r, echo=FALSE, out.width="55%", fig.align="center"}
 knitr::include_graphics("img/TablaB16.jpg")
@@ -348,7 +324,7 @@ knitr::include_graphics("img/TablaB16.jpg")
 ## Anexo: Tablas y Gráficas Adicionales
 
 ---
-### Tendencias paralelas? Caso de estudio - impacto del facilitar divorcio en VIP
+### ¿Tendencias paralelas? Caso de estudio - impacto del facilitar divorcio en VP
 ```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/fig2.jpg")
 ```
