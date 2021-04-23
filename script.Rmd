@@ -252,7 +252,7 @@ Y las estimaciones exluyendo a un estado a la vez.
 ---
 ### Mecanismos
 
-# *diagrama: easier divorce -> IPV -> afecta a matrimonios que se disuelven -> matrimonios que se disuelven
+# *diagrama: easier divorce -> IPV -> afecta a matrimonios que se disuelven o no-> matrimonios que se disuelven
 
 
 ---
