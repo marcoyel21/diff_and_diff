@@ -139,6 +139,8 @@ knitr::include_graphics("img/Tabla2.jpg")
 ---
 ##  Matrimonios
 
+<div style="text-align: justify">
+
 La proporción de la población casada en el país es de 42%. Observamos:
 * No hay evidencia de impacto en número de matrimonios por cada 1000 personas
 
@@ -160,7 +162,9 @@ knitr::include_graphics("img/TablaB2.jpg")
 knitr::include_graphics("img/Tabla3.jpg")
 ```
 ---
-## Efecto Efecto de facilitar el divorcio en VP
+## Efecto de facilitar el divorcio en VP
+
+<div style="text-align: justify">
 
 El 89% de la muestra se compone de mujeres que estaban casadas al momento de la reforma y que continuaban casadas al momento de la encuesta.
 
@@ -181,6 +185,8 @@ La presencia de controles *no* cambia los resultados **(incluyendo nivel de educ
 ** diagrama
 ---
 ### Efecto de facilitar el divorcio en VP
+
+<div style="text-align: justify">
 
 A corto plazo fue una disminución en la violencia sexual del 14% respecto a la media muestral.
 
@@ -292,33 +298,9 @@ knitr::include_graphics("img/Tabla7.jpg")
 # *Diagrama: inspecciona dos mecanismos. ya que IPV observado es en matrimonios intactos. IPV -> mecanismo para prevenir que dejen matrimonio ó IPV -> triggereado por variables afectadas por la reforma
 
 ---
-### Mecanismos: VP como instrumento de control
 
-<div style="text-align: justify">
-
-Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, mas que este status haya cambiado al paso del tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años.
-
-En el corto plazo, puede haber herramientas no violentas para persuadirlas a quedarse en él:
-
-* Redistribución de recursos hacia ellas
-* Amenazas
-* Comportamiento afectivo
-
-Mas estas pueden dejar de ser efectivas, comenzando el IPV. Su ocurrencia y la intención de divorciarse parecen ser independientes del nivel educativo de la mujer.
-
----
-### Mecanismos: VP como instrumento de control
-
-<img style="float: right;" src="img/Tabla8.jpg" width="300" height="480">
-#### Y aquí podemos poner algo de texto que comente la tabla
-
-
----
 ## Mecanismos: VP y variables externas
-
-<div style="text-align: justify">
-
-La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VIP. A su vez, estos mecanismos se pudieron haber activado de forma retardada.
+La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VP. A su vez, estos mecanismos se pudieron haber activado de forma retardada.
 
 La autora usa dos proxies económicas:
 
@@ -329,12 +311,28 @@ y dos de actitudes:
 * Rechazo de la mujer hacia el IPV
 * Si está considerando divorciarse
 
----
-## Mecanismos: VP y variables externas
+La autora estima si la reforma tuvo un impacto en alguna de estas variables, obtiene coeficientes no significativos en el corto y largo plazo. Concluye que este segundo mecanismo no se observa en los datos.
 
-```{r, echo=FALSE, out.width="75%", fig.align="center"}
-knitr::include_graphics("img/TablaB17.jpg")
-```
+---
+### Mecanismos: VP como instrumento de control
+
+<img style="float: right;" src="img/Tabla8.jpg" width="340" height="500">
+
+<div style="text-align: justify">
+Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, a menos que este status haya cambiado en el tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años.
+
+En el corto plazo, pueden haber herramientas no violentas para persuadir a las esposas a quedarse en él:
+
+* Redistribución de recursos hacia ellas
+* Amenazas*
+* Comportamiento afectivo
+
+Mas estas pueden dejar de ser efectivas, comenzando el IPV. **Su ocurrencia es más probable ante un mayor nivel educativo de la mujer.**
+
+???
+
+* Amenazas es una forma de VP.
+
 
 ---
 ### Posibles variables omitidas: características psicológicas de los hombres
@@ -431,6 +429,13 @@ knitr::include_graphics("img/b13.jpg")
 
 ```{r, echo=FALSE, out.width="75%", fig.align="center"}
 knitr::include_graphics("img/b14.jpg")
+```
+
+---
+## Mecanismos: VP y variables externas
+
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("img/TablaB17.jpg")
 ```
 
 
