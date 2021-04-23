@@ -39,7 +39,7 @@ En la primera, hace un *pool* de las cuatro olas y calcula un MPL:
 $$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
 --
-donde nuestro coeficiente de interés es **$\mathbf{\delta}$**, y:
+donde nuestro coeficiente de interés es $\large \mathbf{\delta}$, y:
 
 $ist$ se refiere a la mujer $i$ viviendo en el estado $s$ en el año de la encuesta $t$,
 
@@ -52,6 +52,7 @@ $X_{ist}$ incluye covariables a nivel individual, de la pareja, y del hogar.
 ---
 ## Primera especificación
 
+<div style="text-align: justify">
 
 $$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
@@ -68,7 +69,7 @@ Sin embargo, cuando el número de clusters es chico (32), las pruebas T suelen s
 
 Ahora, se analizará el período post-tratamiento a corto y largo plazo:
 
-$$IPV_{ist} = \gamma + \sum_{k=1}^2 \delta_k Reform_{st}^k + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
+$$\small IPV_{ist} = \gamma + \sum_{k=1}^2 \delta_k Reform_{st}^k + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
 en $Reform_{st}^k$, $k$ indica el número de olas que han pasado en los estados desde que pasó la reforma.
 
@@ -78,13 +79,13 @@ $k=1$ si el estado ha estado expuesto a solo una ola:
 
 * Resto de los estados en 2016
 
-**$\delta_1$** mide el efecto de **corto plazo**, o hasta 5 años después de la reforma.
+$\large \delta_1$ mide el efecto de **corto plazo**, o hasta 5 años después de la reforma.
 
 $k=2$ si el estado ha estado expuesto a dos olas;
 
 * Ciudad de México e Hidalgo en 2016
 
-**$\delta_2$** mide el efecto de **largo plazo**, o de 6-8 años después de la reforma.
+$\large \delta_2$ mide el efecto de **largo plazo**, o de 6-8 años después de la reforma.
 
 ---
 ## Resultados
@@ -95,7 +96,7 @@ Mostraremos los resultados de facilitar/disminuir el costo del divorcio en cuatr
 
 2. Efectos en la VP
 
-3. Tests de robustez
+3. Pruebas de robustez
 
 4. Mecanismos
 
@@ -107,19 +108,21 @@ Usando datos de diversas fuentes de 1998-2016, estima:
 * Aumento en la tasa de divorcio en 34% - 0.24 respecto a la tasa de divorcios promedio en ET antes de la reforma
 
 
-![Fig 2](img/TablaB2.jpg)
+```{r, echo=FALSE, out.width="70%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/TablaB2.jpg")
+```
 
 
 ---
 ##  Efectos en divorcios
 
 
-* Efecto persistente en período de post-tratamiento (10 años aprox.)
+* Efecto persistente en período de post-tratamiento (10 años aprox.) 
+* *ET: estados tratados*
 
-![Fig 3](img/TablaC3.jpg)
-
-
-*ET: estados tratados*
+```{r, echo=FALSE, out.width="70%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/TablaC3.jpg")
+```
 
 
 ---
@@ -143,17 +146,21 @@ La proporción de la población casada en el país es de 42%. Observamos:
 
 * Incremento en 38% del número de divorcios por cada 1000 personas casadas en ET vs EC
 
-![Fig 2](img/TablaB2.jpg)
+```{r, echo=FALSE, out.width="50%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/TablaB2.jpg")
+```
+
+
 
 ---
-## Efecto en VP
+## Efecto de facilitar el divorcio en VP
 
 
 ```{r, echo=FALSE, out.width="80%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla3.jpg")
 ```
 ---
-## Efecto en VP
+## Efecto Efecto de facilitar el divorcio en VP
 
 El 89% de la muestra se compone de mujeres que estaban casadas al momento de la reforma y que continuaban casadas al momento de la encuesta.
 
@@ -169,11 +176,11 @@ La presencia de controles *no* cambia los resultados **(incluyendo nivel de educ
   * Agregar tendencias de tiempo de los estados muestra un aumento de 31%. Sin embargo, su estimación es imprecisa.
 
 ---
-### Efecto en VP
+### Efecto de facilitar el divorcio en VP
 
 ** diagrama
 ---
-### Efecto en VP
+### Efecto de facilitar el divorcio en VP
 
 A corto plazo fue una disminución en la violencia sexual del 14% respecto a la media muestral.
 
@@ -287,6 +294,8 @@ knitr::include_graphics("img/Tabla7.jpg")
 ---
 ### Mecanismos: VP como instrumento de control
 
+<div style="text-align: justify">
+
 Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, mas que este status haya cambiado al paso del tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años.
 
 En el corto plazo, puede haber herramientas no violentas para persuadirlas a quedarse en él:
@@ -300,11 +309,14 @@ Mas estas pueden dejar de ser efectivas, comenzando el IPV. Su ocurrencia y la i
 ---
 ### Mecanismos: VP como instrumento de control
 
-```{r, echo=FALSE, out.width="35%", fig.align="center"}
-knitr::include_graphics("img/Tabla8.jpg")
-```
+<img style="float: right;" src="img/Tabla8.jpg" width="300" height="480">
+#### Y aquí podemos poner algo de texto que comente la tabla
+
+
 ---
 ## Mecanismos: VP y variables externas
+
+<div style="text-align: justify">
 
 La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VIP. A su vez, estos mecanismos se pudieron haber activado de forma retardada.
 
@@ -320,14 +332,14 @@ y dos de actitudes:
 ---
 ## Mecanismos: VP y variables externas
 
-```{r, echo=FALSE, out.width="65%", fig.align="center"}
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
 knitr::include_graphics("img/TablaB17.jpg")
 ```
 
 ---
 ### Posibles variables omitidas: características psicológicas de los hombres
 
-```{r, echo=FALSE, out.width="55%", fig.align="center"}
+```{r, echo=FALSE, out.width="65%", fig.align="center"}
 knitr::include_graphics("img/TablaB16.jpg")
 ```
 
