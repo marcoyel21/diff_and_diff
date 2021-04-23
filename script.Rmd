@@ -193,13 +193,31 @@ Los cambios que se dieron respecto a la media de lo ET a largo plazo fueron:
 * Económica: 14% 
 
 ---
-## Tests de Robustez
+#### Tests de Robustez - 1. Validar el supuesto de tendencias paralelas
 
-## *Propongo sintetizar en palabras todos menos el de reporting behaviour.*
+1.1. Incluir dummies pre-reforma en el modelo (2):
+
+$$\small IPV_{ist} = \gamma + \sum_{k=\color{red}{-2}}^2 \delta_k Reform_{st}^k + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
+<div style="text-align: center">
+
+```{r, echo=FALSE, out.width="65%", fig.cap="Impacto de facilitar el divorcio en VP", fig.align="center"}
+knitr::include_graphics("img/fig2.jpg")
+```
+
+
+---
+#### Tests de Robustez - 1. Validar el supuesto de tendencias paralelas
+
+1.2. Test de falsificación. Se estima el impacto de las reformas en la violencia hacia mujeres encuestadas, perpetrada por $\color{#4B5C96}{\textbf{desconocidos}}$.
+
+```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/b7.jpg")
+```
+
+---
+### Tests de Robustez - 2. Confusores
 
 <div style="text-align: justify">
-
-+ Se valida el supuesto de tendencias paralelas mediante un caso de estudio y un test de falsificación adicional.
 
 + La autora da validez a la estrategia de identificación al evaluar diferentes factores que podrían agregar variación no aleatoria en el tiempo y afectar sus estimaciones:
   
@@ -216,7 +234,7 @@ Ninguno de estos factores produce un cambio relevante en sus resultados.
 Igual mencionar acá que metimos casi todos los tests de robustez en el apéndice por si les llama la atención algún resultado y quieren verlo en tabla. Pa que no se espanten que lo resumimos todo.
 
 ---
-## Tests de Robustez
+### Tests de Robustez - 3. Tamaño de la muestra
 
 <div style="text-align: justify">
 
@@ -225,8 +243,8 @@ Igual mencionar acá que metimos casi todos los tests de robustez en el apéndic
 + Adicionalmente, considera la posibilidad de que sus resultados presenten sesgos por otras razones como:
 
   + migración interestatal
-  + errores de medición en la composición de su muestra de mujeres casadas o de su variable dependiente de ser víctima de VIP
-  + traslape entre la encuesta y los episodios de VIP
+  + errores de medición en la composición de su muestra de mujeres casadas o de su variable dependiente de ser víctima de VP
+  + traslape entre la encuesta y los episodios de VP
 
 ???
 
@@ -234,7 +252,7 @@ en cambios de grupo de control y tratamiento, también mencionar la col5 de la b
 Y las estimaciones exluyendo a un estado a la vez.
 
 ---
-## Tests de robustez: VIP vivida vs VIP reportada
+### Tests de robustez - 4. VP vivida vs VP reportada
 
 <div style="text-align: justify">
 
@@ -242,23 +260,21 @@ Y las estimaciones exluyendo a un estado a la vez.
 
 + Los resultados podrían estar afectados por cambios en la forma de reportar la información. No obstante, la ENDIREH sigue las guías de la OMS. En la entrevista se evita la palabra violencia y abuso, es llevada a cabo de forma privada y por mujeres capacitadas.
 
-+ Aún así, la autora estima el impacto de leyes de divorcio en la probabilidad de reportar VIP a una autoridad. Esta relación tiene el problema de presentar un sesgo de selección: sólo las mujeres que son víctimas de VIP van a reportar episodios de VIP.
++ Aún así, la autora estima el impacto de leyes de divorcio en la probabilidad de reportar VP a una autoridad. 
+
+\begin{gather*}
+\color{#4B5C96}{\textbf{La probabilidad de reportar cae en los estados donde}} \\
+\color{#4B5C96}{\textbf{se introducen reformas al divorcio.}}
+\end{gather*}
+
++ Esto implica que los resultados están sesgados a la baja y podrían interpretarse como una cota inferior.
+
+???
+
++ Esta relación tiene el problema de presentar un sesgo de selección: sólo las mujeres que son víctimas de VP van a reportar episodios de VP.
 
 + Se plantea un modelo de selección de Heckman usando en la primera etapa como regresora de la probabilidad de ser víctima un indicador de si el esposo vivió episodios de violencia en la infancia.
 
----
-
-```{r, echo=FALSE, out.width="75%", fig.align="center"}
-knitr::include_graphics("img/b14.jpg")
-```
-
-<div style="text-align: justify">
-
-\begin{align*}
-\color{#4B5C96}{\textbf{La probabilidad de reportar cae en los estados donde}} \\
-\color{#4B5C96}{\textbf{se introducen reformas al divorcio.}}
-\end{align*}
-Esto implica que los resultados están sesgados a la baja y podrían interpretarse como una cota inferior.
 
 ---
 ### Mecanismos
@@ -326,25 +342,50 @@ knitr::include_graphics("img/TablaB16.jpg")
 ```
 
 ---
-### Limitaciones..
+### Conclusiones
+
 <div style="text-align: justify">
 
+Se aprovecha la variación temporal en la introducción de la reforma de divorcio unilateral en estados de México para estimar el efecto de facilitar el divorcio en VP.
+
+El principal efecto encontrado en este trabajo es que, en el largo plazo, la aprobación del divorcio unilateral aumenta la violencia marital en 3.7 puntos porcentuales (21% con respecto a la media). Por otra parte, en el corto plazo no hay evidencia de un cambio significativo en VP. Estos efectos son robustos a múltiples pruebas.
+
+El hallazgo es de especial importancia dado que es contrario a lo que se había encontrado en países en desarrollo previamente. Hay otras implicaciones de política pública.
+
+No obstante, el resultado de largo plazo proviene de dos estados del país. Esta es la principal **limitación** del trabajo. ¿Se llegaría a las mismas conclusiones incluyendo la futura ENDIREH 2021?
+
+???
+La ENDIREH 2021 capturará sucesos de pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
 
 ---
-## Anexo: Tablas y Gráficas Adicionales
+ <style>
+ 
+ .container {
+  height: 600px;
+  position: relative;
+}
 
----
-### Tendencias paralelas? Caso de estudio - impacto del facilitar divorcio en VIP
-```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/fig2.jpg")
-```
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #1c5253;
+  font-size:50px;
+  font-weight: 800;
+}
 
----
-### Efecto de facilitar divorcio en violencia perpetrada por desconocidos
+</style>
 
-```{r, echo=FALSE, out.width="75%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/b7.jpg")
-```
+<div class="container">
+  <div class="vertical-center">
+    <p>Anexo: </p>
+    Tablas y Gráficas Adicionales
+  </div>
+</div>
+
 
 ---
 ### Efecto de facilitar el divorcio en VIP - Factores de confusión potenciales, muestra de mujeres casadas
@@ -378,26 +419,25 @@ knitr::include_graphics("img/b11.jpg")
 ```
 
 ---
-### Efecto de facilitar el divorcio en VIP - muestra restringida por valores faltantes
+### Efecto de facilitar el divorcio en VP - muestra restringida por valores faltantes
 ```{r, echo=FALSE, out.width="75%", fig.align="center"}
 knitr::include_graphics("img/b13.jpg")
 ```
 
+---
+### VP vivida vs VP reportada
+
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("img/b14.jpg")
+```
+
 
 ---
-### Efecto de facilitar el divorcio en VIP - Quitando un estado a la vez
+### Efecto de facilitar el divorcio en VP - Quitando un estado a la vez
 
 ```{r, echo=FALSE, out.width="95%", fig.align="center"}
 knitr::include_graphics("img/c6.jpg")
 ```
-
-
-
-
-
-
-
-
 
 
 
