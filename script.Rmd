@@ -428,6 +428,8 @@ La presencia de controles *no* cambia los resultados **(incluyendo nivel de educ
 ```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla4.jpg")
 ```
+<small>Esta muestra se compone de mujeres casadas en la reforma, casadas o divorciadas al momento de la encuesta.</small>
+
 ---
 ##  Efectos en matrimonios y divorcios 
 
