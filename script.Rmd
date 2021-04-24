@@ -421,9 +421,9 @@ La presencia de controles *no* cambia los resultados **(incluyendo nivel de educ
 
 <div style="text-align: justify">
 
-A corto plazo fue una disminución en la violencia sexual del 14% respecto a la media muestral.
+* A corto plazo, se da una *disminución* en la violencia sexual del 14% respecto a la media muestral.
 
-Los cambios que se dieron respecto a la media de lo ET a largo plazo fueron un aumento en la violencia emocional de 23% y económica: 14%
+* A largo plazo, la violencia física aumentó en 21%, la emocional en 23%, y la económica en 14%
 
 ```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla4.jpg")
