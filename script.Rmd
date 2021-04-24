@@ -541,7 +541,9 @@ Y las estimaciones exluyendo a un estado a la vez.
 ---
 ### Mecanismos
 
-# *diagrama: easier divorce -> IPV -> afecta a matrimonios que se disuelven o no-> matrimonios que se disuelven
+```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/Diagrama2.jpg")
+```
 
 
 ---
@@ -554,11 +556,22 @@ knitr::include_graphics("img/Tabla7.jpg")
 ---
 ### Mecanismos: matrimonios intactos
 
-# *Diagrama: inspecciona dos mecanismos. ya que IPV observado es en matrimonios intactos. IPV -> mecanismo para prevenir que dejen matrimonio ó IPV -> triggereado por variables afectadas por la reforma
+```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/Diagrama3.jpg")
+```
+
+---
+### Mecanismos: matrimonios intactos
+
+```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/Diagrama4.jpg")
+```
 
 ---
 
 ## Mecanismos: VP y variables externas
+<div style="text-align: justify">
+  
 La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VP. A su vez, estos mecanismos se pudieron haber activado de forma retardada.
 
 La autora usa dos proxies económicas:
