@@ -290,9 +290,9 @@ Segunda especificación:
 
 
 --
-###Estudio sobre el impacto de los divorcios
+###Estudio sobre el impacto de la reforma
 
-.left[Para análisis del divorcio unilateral en la tasa de divorcio se utilizaron las variables:] 
+.left[Para análisis del divorcio unilateral en la VP se utilizaron las variables:] 
 
 
 
