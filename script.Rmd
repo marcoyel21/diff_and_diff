@@ -447,7 +447,7 @@ knitr::include_graphics("img/Tabla4.jpg")
 * Disminución de 3% en la proporción de mujeres casadas respecto a la media de los ET antes de la reforma 
 
 ```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/TablaB2.jpg")
+knitr::include_graphics("img/Tabla2.jpg")
 ```
 
 
