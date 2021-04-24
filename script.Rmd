@@ -568,7 +568,7 @@ knitr::include_graphics("img/Diagrama3.jpg")
 ### Mecanismos: matrimonios intactos
 
 ```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/Diagrama41.jpg")
+knitr::include_graphics("img/Diagrama42.jpg")
 ```
 
 ---
