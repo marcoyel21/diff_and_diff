@@ -417,7 +417,7 @@ La presencia de controles *no* cambia los resultados **(incluyendo nivel de educ
   * Agregar tendencias de tiempo de los estados muestra un aumento de 31%. Sin embargo, su estimación es imprecisa.
 
 ---
-### Efecto de facilitar el divorcio en VP
+### Efecto de facilitar el divorcio en VP: desglose
 
 <div style="text-align: justify">
 
