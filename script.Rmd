@@ -142,21 +142,21 @@ Estos resultados provenen sobretodo de aquellas mujeres que han seguido casadas 
 
 --
 
-Años de recolección:
+###Años de recolección:
+
 .pull-left[
-.center[
-2003: 34,184
+2003: .pull-right[34,184]
 
-2006: 133,398
+2006: .pull-right[133,398]
 
-2011: 152,636
+2011: .pull-right[152,636]
 
-2016: 111,256
-]
+2016: .pull-right[111,256]
+
 ]
 
 .pull-right[
-![Imagenilustrativa](dimg1.jpg)
+![Imagen Ilustrativa](dimg1.jpg)
 
 <small>Foto: Freepik.</small>
 
@@ -168,16 +168,16 @@ Años de recolección:
 
 
 --
-Composición de la muestra
+###Composición de la muestra
 
-La muestra es compuesta por mujeres casadas durante la reforma y continúan casadas o estaban divorciadas durante la encuesta.
+La muestra es compuesta por mujeres casadas durante la reforma y continuaron con el mismo estatus o estaban divorciadas durante la encuesta.
 
-Se excluyeron aquellas que se casaron después de la reforma.
+<small>Se excluyeron aquellas que se casaron después de la reforma.</small>
 
 Características de la mujer casada:
 -	Mujeres que viven con su pareja.
 -	Separadas temporalmente.
--	Separadas definitivamente pero no divorciadas.
+-	Separadas definitivamente, pero no divorciadas.
 
 
 Estatus de la relación al momento de la encuesta:
@@ -189,14 +189,23 @@ Estatus de la relación al momento de la encuesta:
 
 
 --
-.center[La muestra final: 214,972]
+###.center[La muestra final: 214,972]
 
 .pull-left[
-- 186,584 (casadas después de la reforma)
-- 2003: 23,333 (100% continuaron casadas)
-- 2006: 66,157 (% continuaron casadas)
-- 2011: 74,770 (% continuaron casadas)
-- 2016: 50,712 (% continuaron casadas)
+
+186,584 mujeres casadas después de la reforma.
+
+- 2003: 23,333 .pull-right[100%]
+
+
+- 2006: 66,157 .pull-right[90.4%]
+
+
+- 2011: 74,770 .pull-right[80.7%]
+
+
+- 2016: 50,712 .pull-right[86%]
+
 ]
 
 .pull-right[
@@ -209,22 +218,22 @@ Estatus de la relación al momento de la encuesta:
 ## 2.	Variables
 
 --
-Cuestionario
+###Cuestionario
 
-•	29 preguntas comparables en las distintos años que se llevó la encuesta, no obstante, se eleimino la pregunta sobre si la pareja le dejó de hablar.
+29 preguntas comparables en los diferentes años que se llevó la encuesta, no obstante, se eliminó la pregunta sobre si la pareja hombre le dejó de hablar a la mujer.
 
 .pull-left[
-Las 28 preguntas están divididas en 4 grupos de IPV:
-1. Física .right[[1,0]]
-2. Sexual .right[[1,0]]
-3. Emocional .right[[1,0]]
-4. Económica .right[[1,0]]
-5. Plus: Cualquiera .right[[1,0]]
+Las 28 preguntas están divididas en 4 grupos de VP:
+1. Física .pull-right[[1,0]]
+2. Sexual .pull-right[[1,0]]
+3. Emocional .pull-right[[1,0]]
+4. Económica .pull-right[[1,0]]
+5. Plus: Cualquiera .pull-right[[1,0]]
 
 ]
 
 .pull-right[
-![Tabla 1](dimg2.jpg)
+![Tabla 1](dimg4.jpg)
 <small>Elaboración Propia. Fuente: Divorce laws and intimate partner violence: Evidence from Mexico.</small>
 ]
 ---
@@ -234,25 +243,42 @@ Las 28 preguntas están divididas en 4 grupos de IPV:
 ## 2.	Variables
 
 --
-Controles
+###Controles
+
 .pull-left[
-1era especificación (empatar nombre):
+
+Primera especificación:
+
 -	Edad de la mujer
--	Raíz indígena de la mujer (mejorar traducción)
+
+-	Raíz indígena de la mujer
+
 -	Nivel educativo de la mujer
+
 -	Presencia de niños
+
 -	Número de hijos
+
 -	Residencia Urbana
+
 -	Estatus socioeconómico
+
 ]
 
 .pull-right[
-Especificación restringida:
+
+Segunda especificación:
+
 - 1er especificación
+
 - Edad del hombre
+
 - Raíz indígena del hombre
+
 - Nivel educativo del hombre
-- Duración del matrimonio
+
+- Años de matrimonio
+
 ]
 
 ---
@@ -262,27 +288,34 @@ Especificación restringida:
 
 
 --
-####Impacto de los divoricios(mejorar titulo)
+###Estudio sobre el impacto de los divoricios
+
 .left[Para análisis del divorcio unilateral en la tasa de divorcio se utilizaron las variables:] 
 
+
+
 .pull-left[
-- Tasa de divorcio
+- Tasa de divorcios
+
 - Tasa de matrimonios
+
 - Migración interestatal
-- Tasa de homomicidio
+
+- Tasa de homicidios
+
 - Tasa de desempleo
-- Desigualdad PEA
+
+- Brecha PEA
+
 - Partido gobernante
 
 ]
 
 .pull-right[
-.pull-right[
 ![Divovrio](dimg3.jpg)
 <small>Foto:Freepik</small>
 ]
 
-]
 ---
 
 ## Estrategia de Identificación: DiD
