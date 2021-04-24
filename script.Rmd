@@ -2,7 +2,7 @@
 title: "Divorce laws and intimate partner violence: Evidence from Mexico"
 subtitle: Aixa García-Ramos (2021)
 author: "Samantha Cervantes, Luis Fierro, Coral Hernández, Alfredo Lefranc, Marco Ramos"
-date: "abril 2021"
+date: "Abril 2021"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css  
@@ -42,7 +42,7 @@ style_mono_accent(
 
 ## Relevancia: Violencia de pareja
 
-+ En el mundo, 1 de cada 3 mujeres han experimentado violencia de pareja (VP, o *inter-partner violence*) (Si lo vemos del otro lado, aproximadamente 1 de cada 3 hombres la ha cometido).
++ En el mundo, 1 de cada 3 mujeres han experimentado violencia de pareja (VP, o *intimate partner violence*) (Si lo vemos del otro lado, aproximadamente 1 de cada 3 hombres la ha cometido).
 
 + Se ha asociado la VP a inestabiliad en el empleo, reducción de productividad y ganancias, a salud deficiente, así como a externalidades negativas en los hijos.
 
@@ -89,6 +89,7 @@ Debido a lo expuesto anteriormente, surge la pregunta:
 México es un lugar ideal para evaluar esta pregunta debido a
 
 + Existe variación en la implementación del divorcio unilateral, temporal y geográficamente.
+
 + 15 entidades federativas aprobaron una reforma (CDMX en 2008 + 14 estados en 2016).
 
 ---
@@ -121,7 +122,7 @@ El divorcio unilateral ha sido sucedido por un incremento significativo en las t
 
 Asimismo, hay efectos de corto y mediano plazo en cuanto al VP: 
 
-+ de 0 a 6 años después de la aprobación no hay relacion 
++ de 0 a 6 años después de la aprobación, no hay relacion 
 + de 6-8  después existe un aumento del 21%, el cual es estadísticamente significativo.
 
 Estos resultados provienen sobre todo de aquellas mujeres que han seguido casadas despues de la reforma. (La autora sugiere que puede ser que a corto plazo, los hombres tengan herramientas no violentas para disuadirlas de dejarlo pero en el largo plazo estas son insuficientes)
@@ -138,6 +139,7 @@ Estos resultados provienen sobre todo de aquellas mujeres que han seguido casada
 ## 1.	Encuesta y muestra
 
 * ENDIREH 2016 (Encuesta Nacional sobre la Dinámica de las Relaciona en los Hogares).
+
   - Recolecta información a detalle sobre la violencia que sufre la mujer en México.
 
 --
