@@ -615,7 +615,7 @@ knitr::include_graphics("img/TablaB16.jpg")
 ```
 
 ---
-### Conclusiones
+### Limitaciones y conclusiones
 
 <div style="text-align: justify">
 
