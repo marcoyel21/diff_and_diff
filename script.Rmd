@@ -441,20 +441,22 @@ knitr::include_graphics("img/Tabla4.jpg")
 
 ---
 ##  Efectos en matrimonios y divorcios: MPL
-
-<img style="float: right;" src="img/Tabla2.jpg" width="340" height="500">
-
 <div style="text-align: justify">
-
+  
 * Incremento de 19% en la proporción de mujeres divorciadas respecto a la media de los ET antes de la reforma 
 * Disminución de 3% en la proporción de mujeres casadas respecto a la media de los ET antes de la reforma 
+
+```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/TablaB2.jpg")
+```
+
 
 ---
 ##  Efectos en matrimonios y divorcios
 
-<img style="float: right;" src="img/TablaC3.jpg" width="340" height="500">
-
-<div style="text-align: justify">
+```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/TablaC3.jpg")
+```
 
 ---
 #### Tests de Robustez - 1. Validar el supuesto de tendencias paralelas
