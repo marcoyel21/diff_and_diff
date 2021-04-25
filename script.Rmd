@@ -437,7 +437,7 @@ knitr::include_graphics("img/TablaB5.jpg")
 ```
 
 ---
-###  Efectos en matrimonios y divorcios 
+###  Efectos en matrimonios y divorcios: modelo estático
 
 <img style="float: right;" src="img/TablaB2.jpg" width="340" height="500">
 
@@ -462,7 +462,13 @@ knitr::include_graphics("img/Tabla2.jpg")
 
 
 ---
-##  Efectos en matrimonios y divorcios
+##  Efectos en matrimonios y divorcios: Event study
+
+```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/TablaC3.jpg")
+```
+---
+##  Efectos en matrimonios y divorcios: modelo dinámico
 
 ```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/TablaC3.jpg")
