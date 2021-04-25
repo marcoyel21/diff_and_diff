@@ -589,8 +589,6 @@ knitr::include_graphics("img/Diagrama42.jpg")
 
 ### Mecanismos: VP como instrumento de control
 
-<img style="float: right;" src="img/Tabla81.jpg" width="340" height="500">
-
 <div style="text-align: justify">
 Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, a menos que este status haya cambiado en el tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años.
 
@@ -605,16 +603,23 @@ Mas estas pueden dejar de ser efectivas, comenzando el IPV. **Su ocurrencia es m
 * Amenazas es una forma de VP.
 
 ---
+### Mecanismos: VP como instrumento de control
+
+```{r, echo=FALSE, out.width="70%", fig.align="center"}
+knitr::include_graphics("img/Tabla81.jpg")
+```
+
+---
 ### Mecanismos: Efectos Heterogéneos 
+
+<img style="float: right;" src="img/TablaB171.jpg" width="340" height="500">
 
 <div style="text-align: justify">
 
 1)Efectos heterogéneos por presencia de niños menores de 18 años en el hogar
 2)Efectos heterogéneos por "tipo de hombre"
 
-```{r, echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("img/TablaB171.jpg")
-```
+
 
 ---
 
