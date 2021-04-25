@@ -347,11 +347,11 @@ $X_{ist}$ incluye covariables a nivel individual, de la pareja, y del hogar.
 
 $$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
-$\alpha_{s}$ es el *vector de efectos fijos (EF)* que controla por el estado de residencia de la mujer
+$\alpha_{s}$ es el vector de efectos fijos (EF) que controla por el estado de residencia de la mujer
 
 $\mu_{t}$ es el vector de EF de tiempo de la encuesta
 
-En primera instancia, utiliza errores estándar agrupados *por estado*, permitiendo que los shocks no observables dentro de ellos estén correlacionados.
+En primera instancia, utiliza errores estándar agrupados por estado, permitiendo que los shocks no observables dentro de ellos estén correlacionados.
 
 Sin embargo, cuando el número de clusters es chico (32), las pruebas T suelen sobre-rechazar. Su solución es utilizar *wild cluster bootstrap standard errors*.
 
