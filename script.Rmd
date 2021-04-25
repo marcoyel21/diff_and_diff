@@ -413,7 +413,6 @@ Solo se nota incremento estadísticamente significativo de IPV a largo plazo (CD
 
 El aumento es de **21%** respecto a la media de VIP en los ET, y **24%** si consideramos *solo* a las mujeres aún casadas.
 
-La presencia de controles *no* cambia los resultados **(incluyendo nivel de educación y número de hijos)**
   * Agregar tendencias de tiempo de los estados muestra un aumento de 31%. Sin embargo, su estimación es imprecisa.
 
 ---
