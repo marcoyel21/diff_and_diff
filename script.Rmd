@@ -347,11 +347,11 @@ $X_{ist}$ incluye covariables a nivel individual, de la pareja, y del hogar.
 
 $$IPV_{ist} = \gamma+ \delta \space Reform_{st} + X_{ist}\beta +\alpha_{s} +\mu_{t} + \epsilon_{ist}$$
 
-$\alpha_{s}$ es el *vector de efectos fijos (EF)* que controla por el estado de residencia de la mujer
+$\alpha_{s}$ es el vector de efectos fijos (EF) que controla por el estado de residencia de la mujer
 
 $\mu_{t}$ es el vector de EF de tiempo de la encuesta
 
-En primera instancia, utiliza errores estándar agrupados *por estado*, permitiendo que los shocks no observables dentro de ellos estén correlacionados.
+En primera instancia, utiliza errores estándar agrupados por estado, permitiendo que los shocks no observables dentro de ellos estén correlacionados.
 
 Sin embargo, cuando el número de clusters es chico (32), las pruebas T suelen sobre-rechazar. Su solución es utilizar *wild cluster bootstrap standard errors*.
 
@@ -413,7 +413,6 @@ Solo se nota incremento estadísticamente significativo de IPV a largo plazo (CD
 
 El aumento es de **21%** respecto a la media de VIP en los ET, y **24%** si consideramos *solo* a las mujeres aún casadas.
 
-La presencia de controles *no* cambia los resultados **(incluyendo nivel de educación y número de hijos)**
   * Agregar tendencias de tiempo de los estados muestra un aumento de 31%. Sin embargo, su estimación es imprecisa.
 
 ---
@@ -438,21 +437,26 @@ knitr::include_graphics("img/TablaB5.jpg")
 ```
 
 ---
-###  Efectos en matrimonios y divorcios 
-
-<img style="float: right;" src="img/TablaB2.jpg" width="340" height="500">
+###  Efectos en matrimonios y divorcios: modelo estático
 
 <div style="text-align: justify">
 
-* Aumento en la tasa de divorcio en 34% respecto a antes de la reforma
-* Incremento de 38% en número de divorcios por cada 1000 personas casadas 
+* Aumento en la tasa de divorcio en 34% respecto a número de personas
+
+* Incremento de 38% en tasa de divorcio respecto a personas casadas
+
 * No hay evidencia de impacto en el número de matrimonios por cada 1000 personas 
+
+```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/TablaB2.jpg")
+```
 
 ---
 ##  Efectos en matrimonios y divorcios: MPL
 <div style="text-align: justify">
   
 * Incremento de 19% en la proporción de mujeres divorciadas respecto a la media de los ET antes de la reforma 
+
 * Disminución de 3% en la proporción de mujeres casadas respecto a la media de los ET antes de la reforma 
 
 ```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
@@ -461,10 +465,16 @@ knitr::include_graphics("img/Tabla2.jpg")
 
 
 ---
-##  Efectos en matrimonios y divorcios
+##  Efectos en matrimonios y divorcios: Event study
 
 ```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/TablaC3.jpg")
+```
+---
+##  Efectos en matrimonios y divorcios: modelo dinámico
+
+```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/TablaB3.jpg")
 ```
 
 ---
@@ -580,28 +590,7 @@ knitr::include_graphics("img/Diagrama3.jpg")
 knitr::include_graphics("img/Diagrama42.jpg")
 ```
 
----
-
-## Mecanismos: VP y variables externas
-<div style="text-align: justify">
-  
-La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VP. A su vez, estos mecanismos se pudieron haber activado de forma retardada.
-
-La autora usa dos proxies económicas:
-
-* Probabilidad de que las mujeres trabajen
-* Salarios de las mujeres
-
-y dos de actitudes:
-* Rechazo de la mujer hacia el IPV
-* Si está considerando divorciarse
-
-La autora estima si la reforma tuvo un impacto en alguna de estas variables, obtiene coeficientes no significativos en el corto y largo plazo. Concluye que este segundo mecanismo no se observa en los datos.
-
----
 ### Mecanismos: VP como instrumento de control
-
-<img style="float: right;" src="img/Tabla8.jpg" width="340" height="500">
 
 <div style="text-align: justify">
 Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, a menos que este status haya cambiado en el tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años.
@@ -617,11 +606,34 @@ Mas estas pueden dejar de ser efectivas, comenzando el IPV. **Su ocurrencia es m
 * Amenazas es una forma de VP.
 
 ---
-### Posibles variables omitidas: características psicológicas de los hombres
+### Mecanismos: VP como instrumento de control
 
-```{r, echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("img/TablaB16.jpg")
+```{r, echo=FALSE, out.width="70%", fig.align="center"}
+knitr::include_graphics("img/Tabla81.jpg")
 ```
+
+---
+### Mecanismos: Efectos Heterogéneos 
+
+<img style="float: right;" src="img/TablaB171.jpg" width="340" height="500">
+
+<div style="text-align: justify">
+
+1)Efectos heterogéneos por presencia de niños menores de 18 años en el hogar
+2)Efectos heterogéneos por "tipo de hombre"
+
+
+
+---
+
+## Mecanismos: VP y variables externas
+<div style="text-align: justify">
+  
+La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VP. A su vez, estos mecanismos se pudieron haber activado de forma retardada.
+
+<img style="float: right;" src="img/TablaB17.jpg" width="340" height="500">
+
+La autora estima si la reforma tuvo un impacto en alguna de estas variables, obtiene coeficientes no significativos en el corto y largo plazo. Concluye es poco probable que los cambios en estas variables estén explicando el patrón observado en la VP.
 
 ---
 ### Limitaciones y conclusiones
