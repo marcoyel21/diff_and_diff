@@ -471,7 +471,7 @@ knitr::include_graphics("img/TablaC3.jpg")
 ##  Efectos en matrimonios y divorcios: modelo dinámico
 
 ```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/TablaC3.jpg")
+knitr::include_graphics("img/TablaB3.jpg")
 ```
 
 ---
