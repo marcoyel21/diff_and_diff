@@ -443,8 +443,10 @@ knitr::include_graphics("img/TablaB5.jpg")
 
 <div style="text-align: justify">
 
-* Aumento en la tasa de divorcio en 34% respecto a antes de la reforma
-* Incremento de 38% en número de divorcios por cada 1000 personas casadas 
+* Aumento en la tasa de divorcio en 34% respecto a número de personas
+
+* Incremento de 38% en tasa de divorcio respecto a personas casadas
+
 * No hay evidencia de impacto en el número de matrimonios por cada 1000 personas 
 
 ---
