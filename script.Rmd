@@ -580,6 +580,25 @@ knitr::include_graphics("img/Diagrama3.jpg")
 knitr::include_graphics("img/Diagrama42.jpg")
 ```
 
+### Mecanismos: VP como instrumento de control
+
+<img style="float: right;" src="img/Tabla8.jpg" width="340" height="500">
+
+<div style="text-align: justify">
+Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, a menos que este status haya cambiado en el tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años.
+
+En el corto plazo, pueden haber herramientas no violentas para persuadir a las esposas a quedarse en él:
+
+* Redistribución de recursos hacia ellas
+* Amenazas*
+* Comportamiento afectivo
+
+Mas estas pueden dejar de ser efectivas, comenzando el IPV. **Su ocurrencia es más probable ante un mayor nivel educativo de la mujer.**
+
+* Amenazas es una forma de VP.
+
+---
+
 ---
 
 ## Mecanismos: VP y variables externas
@@ -597,24 +616,6 @@ y dos de actitudes:
 * Si está considerando divorciarse
 
 La autora estima si la reforma tuvo un impacto en alguna de estas variables, obtiene coeficientes no significativos en el corto y largo plazo. Concluye que este segundo mecanismo no se observa en los datos.
-
----
-### Mecanismos: VP como instrumento de control
-
-<img style="float: right;" src="img/Tabla8.jpg" width="340" height="500">
-
-<div style="text-align: justify">
-Es posible que matrimonios que no se divorciaron al suceder la reforma eran de buena calidad, a menos que este status haya cambiado en el tiempo. Sin embargo, el que las mujeres intenten dejar un matrimonio puede ser un proceso de años.
-
-En el corto plazo, pueden haber herramientas no violentas para persuadir a las esposas a quedarse en él:
-
-* Redistribución de recursos hacia ellas
-* Amenazas*
-* Comportamiento afectivo
-
-Mas estas pueden dejar de ser efectivas, comenzando el IPV. **Su ocurrencia es más probable ante un mayor nivel educativo de la mujer.**
-
-* Amenazas es una forma de VP.
 
 ---
 ### Posibles variables omitidas: características psicológicas de los hombres
