@@ -563,7 +563,7 @@ knitr::include_graphics("img/Diagrama2.jpg")
 ### Mecanismos: efectos de reforma en VP y estado civil
 
 ```{r, echo=FALSE, out.width="70%", fig.align="center"}
-knitr::include_graphics("img/Tabla7.jpg")
+knitr::include_graphics("img/Tabla72.jpg")
 ```
 
 ---
