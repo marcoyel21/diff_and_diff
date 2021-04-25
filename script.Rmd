@@ -439,8 +439,6 @@ knitr::include_graphics("img/TablaB5.jpg")
 ---
 ###  Efectos en matrimonios y divorcios: modelo estático
 
-<img style="float: right;" src="img/TablaB2.jpg" width="340" height="500">
-
 <div style="text-align: justify">
 
 * Aumento en la tasa de divorcio en 34% respecto a número de personas
@@ -449,11 +447,16 @@ knitr::include_graphics("img/TablaB5.jpg")
 
 * No hay evidencia de impacto en el número de matrimonios por cada 1000 personas 
 
+```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+knitr::include_graphics("img/TablaB2.jpg")
+```
+
 ---
 ##  Efectos en matrimonios y divorcios: MPL
 <div style="text-align: justify">
   
 * Incremento de 19% en la proporción de mujeres divorciadas respecto a la media de los ET antes de la reforma 
+
 * Disminución de 3% en la proporción de mujeres casadas respecto a la media de los ET antes de la reforma 
 
 ```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
