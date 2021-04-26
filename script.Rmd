@@ -280,7 +280,7 @@ Especificación con controles:
 
 .pull-right[
 
-Segunda especificación:
+Especificación Restringida:
 
 - 1er especificación
 
