@@ -42,6 +42,8 @@ style_mono_accent(
 
 ## Relevancia: Violencia de pareja
 
+<div style="text-align: justify">
+
 + En el mundo, 1 de cada 3 mujeres han experimentado violencia de pareja (VP, o *intimate partner violence*) (Si lo vemos del otro lado, aproximadamente 1 de cada 3 hombres la ha cometido).
 
 + Se ha asociado la VP a inestabiliad en el empleo, reducción de productividad y ganancias, a salud deficiente, así como a externalidades negativas en los hijos.
@@ -51,6 +53,8 @@ style_mono_accent(
 ---
 
 ## Relevancia: Divorcio unilateral
+
+<div style="text-align: justify">
 
 + El divorcio unilateral permite que el divorcio sea concedido sin necesidad de probar una razón.
 
@@ -63,6 +67,8 @@ style_mono_accent(
 ---
 
 ## Relevancia: Falta certeza sobre su relación con el divorcio
+
+<div style="text-align: justify">
 
 + Modelos analíticos y trabajos empíricos en países desarrollados sostienen que con el divorcio unilateral disminuye la violencia.
 
@@ -118,6 +124,8 @@ knitr::include_graphics("unilateral.png")
 
 ## Contexto
 
+<div style="text-align: justify">
+
 El divorcio unilateral ha sido sucedido por un incremento significativo en las tasas de divorcio; un incremento en el acumulado de mujeres divorciadas; un decremento en el acumulado de mujeres casadas y finalmente un cambio estadisticamente no significativo en las tasas de matrimonio...
 
 Asimismo, hay efectos de corto y mediano plazo en cuanto al VP: 
@@ -136,7 +144,7 @@ Estos resultados provienen sobre todo de aquellas mujeres que han seguido casada
 
 ---
 ## Datos
-## 1.	Encuesta y muestra
+### 1.	Encuesta y muestra
 
 * ENDIREH 2016 (Encuesta Nacional sobre la Dinámica de las Relaciona en los Hogares).
 
@@ -144,9 +152,10 @@ Estos resultados provienen sobre todo de aquellas mujeres que han seguido casada
 
 --
 
+.pull-left[
+
 ###Años de recolección:
 
-.pull-left[
 2003: .pull-right[34,184]
 
 2006: .pull-right[133,398]
@@ -166,7 +175,7 @@ Estos resultados provienen sobre todo de aquellas mujeres que han seguido casada
 ---
 ---
 ## Datos
-## 1.	Encuesta y muestra
+### 1.	Encuesta y muestra
 
 
 --
@@ -187,7 +196,7 @@ Estatus de la relación al momento de la encuesta:
 ---
 ---
 ## Datos
-## 1.	Encuesta y muestra
+### 1.	Encuesta y muestra
 
 
 --
@@ -217,7 +226,7 @@ Estatus de la relación al momento de la encuesta:
 ---
 ---
 ## Datos
-## 2.	Variables
+### 2.	Variables
 
 --
 ### Cuestionario
@@ -242,7 +251,7 @@ Las 28 preguntas están divididas en 4 grupos de VP:
 ---
 
 ##Datos
-## 2.	Variables
+### 2.	Variables
 
 --
 ###Controles
@@ -286,11 +295,11 @@ Segunda especificación:
 ---
 ---
 ##Datos
-## 2.	Variables
+### 2.	Variables
 
 
 --
-###Estudio sobre el impacto de la reforma
+### Estudio sobre el impacto de la reforma
 
 .left[Para análisis del divorcio unilateral en la VP se utilizaron las variables:] 
 
@@ -406,7 +415,9 @@ knitr::include_graphics("img/Tabla3.jpg")
 El 89% de la muestra se compone de mujeres que estaban casadas al momento de la reforma y que continuaban casadas al momento de la encuesta.
 
 Analizar el efecto en las mujeres aún casadas tiene dos ventajas:
+
 1. Fueron encuestadas en el 2003, agregando un punto de tiempo
+
 2. Se incorporan controles de sus parejas
 
 Solo se nota incremento estadísticamente significativo de IPV a largo plazo (CDMX e Hidalgo en 2016)
@@ -424,7 +435,7 @@ El aumento es de **21%** respecto a la media de VIP en los ET, y **24%** si cons
 
 * A largo plazo, la violencia física aumentó en 21%, la emocional en 23%, y la económica en 14%
 
-```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="65%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla4.jpg")
 ```
 <small>Esta muestra se compone de mujeres casadas en la reforma, casadas o divorciadas al momento de la encuesta.</small>
@@ -432,7 +443,7 @@ knitr::include_graphics("img/Tabla4.jpg")
 ---
 ### Efecto de facilitar el divorcio en VP: efectos marginales
 
-```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/TablaB5.jpg")
 ```
 
@@ -447,7 +458,7 @@ knitr::include_graphics("img/TablaB5.jpg")
 
 * No hay evidencia de impacto en el número de matrimonios por cada 1000 personas 
 
-```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="70%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/TablaB2.jpg")
 ```
 
@@ -459,7 +470,7 @@ knitr::include_graphics("img/TablaB2.jpg")
 
 * Disminución de 3% en la proporción de mujeres casadas respecto a la media de los ET antes de la reforma 
 
-```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="80%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/Tabla2.jpg")
 ```
 
@@ -467,13 +478,13 @@ knitr::include_graphics("img/Tabla2.jpg")
 ---
 ##  Efectos en matrimonios y divorcios: Event study
 
-```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="80%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/TablaC3.jpg")
 ```
 ---
 ##  Efectos en matrimonios y divorcios: modelo dinámico
 
-```{r, echo=FALSE, out.width="55%", fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="54%", fig.cap="", fig.align="center"}
 knitr::include_graphics("img/TablaB3.jpg")
 ```
 
@@ -489,6 +500,9 @@ $$\small IPV_{ist} = \gamma + \sum_{k=\color{red}{-2}}^2 \delta_k Reform_{st}^k 
 knitr::include_graphics("img/fig2.jpg")
 ```
 
+???
+
+Metimos casi todos los tests de robustez en el apéndice por si les llama la atención algún resultado y quieren verlo en tabla.
 
 ---
 #### Tests de Robustez - 1. Validar el supuesto de tendencias paralelas
@@ -504,19 +518,20 @@ knitr::include_graphics("img/b7.jpg")
 
 <div style="text-align: justify">
 
-+ La autora da validez a la estrategia de identificación al evaluar diferentes factores que podrían agregar variación no aleatoria en el tiempo y afectar sus estimaciones:
+La autora da validez a la estrategia de identificación al evaluar diferentes factores que podrían agregar variación no aleatoria en el tiempo y afectar sus estimaciones:
 
   + Aprobación de la ley de "divorcio necesario" en el 2015 a nivel federal.
+  
   + Aprobación de leyes estatales contra la violencia doméstica en el periodo de estudio.
+  
   + La despenalización del aborto en la CDMX.
+  
   + Agregar controles que aproximen por tendencias macroeconómicas, de violencia general, y de equidad de género y nivel de progresividad del estado.
+  
   + Diferencias en la variación temporal de los controles entre control y tratamiento.
 
 Ninguno de estos factores produce un cambio relevante en sus resultados.
 
-???
-
-Igual mencionar acá que metimos casi todos los tests de robustez en el apéndice por si les llama la atención algún resultado y quieren verlo en tabla. Pa que no se espanten que lo resumimos todo.
 
 ---
 ### Tests de Robustez - 3. Tamaño de la muestra
@@ -525,16 +540,28 @@ Igual mencionar acá que metimos casi todos los tests de robustez en el apéndic
 
 + Otra preocupación de la autora es el tamaño de su muestra a nivel estatal (32 estados) y temporal (4 encuestas). Por ello, contrasta sus resultados al cambiar sus grupos de control y tratamiento. A pesar de observar cambios menores en sus coeficientes y errores estándar, cada variación que propone la lleva a las mismas conclusiones.
 
-+ Adicionalmente, considera la posibilidad de que sus resultados presenten sesgos por otras razones como:
-
-  + migración interestatal
-  + errores de medición en la composición de su muestra de mujeres casadas o de su variable dependiente de ser víctima de VP
-  + traslape entre la encuesta y los episodios de VP
+```{r, echo=FALSE, out.width="80%", fig.align="center"}
+knitr::include_graphics("img/c6.jpg")
+```
 
 ???
 
 en cambios de grupo de control y tratamiento, también mencionar la col5 de la b11, o sea mujeres que viven con otras mujeres en los estados de tratamiento como grupo control.
 Y las estimaciones exluyendo a un estado a la vez.
+
+---
+### Tests de Robustez - 3. Tamaño de la muestra
+
+<div style="text-align: justify">
+
++ Adicionalmente, considera la posibilidad de que sus resultados presenten sesgos por otras razones como:
+
+  + migración interestatal
+  
+  + errores de medición en la composición de su muestra de mujeres casadas o de su variable dependiente de ser víctima de VP
+  
+  + traslape entre la encuesta y los episodios de VP
+
 
 ---
 ### Tests de robustez - 4. VP vivida vs VP reportada
@@ -545,20 +572,16 @@ Y las estimaciones exluyendo a un estado a la vez.
 
 + Los resultados podrían estar afectados por cambios en la forma de reportar la información. No obstante, la ENDIREH sigue las guías de la OMS. En la entrevista se evita la palabra violencia y abuso, es llevada a cabo de forma privada y por mujeres capacitadas.
 
-+ Aún así, la autora estima el impacto de leyes de divorcio en la probabilidad de reportar VP a una autoridad.
++ Aún así, la autora estima el impacto de leyes de divorcio en la probabilidad de reportar VP a una autoridad. Esta relación tiene el problema de presentar un sesgo de selección: sólo las mujeres que son víctimas de VP van a reportar episodios de VP.
+
++ Se plantea un modelo de selección de Heckman usando en la primera etapa como regresora de la probabilidad de ser víctima un indicador de si el esposo vivió episodios de violencia en la infancia.
 
 \begin{gather*}
 \color{#4B5C96}{\textbf{La probabilidad de reportar cae en los estados donde}} \\
 \color{#4B5C96}{\textbf{se introducen reformas al divorcio.}}
 \end{gather*}
 
-+ Esto implica que los resultados están sesgados a la baja y podrían interpretarse como una cota inferior.
-
-???
-
-+ Esta relación tiene el problema de presentar un sesgo de selección: sólo las mujeres que son víctimas de VP van a reportar episodios de VP.
-
-+ Se plantea un modelo de selección de Heckman usando en la primera etapa como regresora de la probabilidad de ser víctima un indicador de si el esposo vivió episodios de violencia en la infancia.
++ Esto implica que, si reportar VP en la encuesta ha cambiado como reportar VP a las autoridades, los resultados estarían sesgados a la baja y podrían interpretarse como una cota inferior.
 
 
 ---
@@ -572,7 +595,7 @@ knitr::include_graphics("img/Diagrama2.jpg")
 ---
 ### Mecanismos: efectos de reforma en VP y estado civil
 
-```{r, echo=FALSE, out.width="70%", fig.align="center"}
+```{r, echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics("img/Tabla72.jpg")
 ```
 
@@ -587,9 +610,10 @@ knitr::include_graphics("img/Diagrama3.jpg")
 ### Mecanismos: matrimonios intactos
 
 ```{r, echo=FALSE, out.width="85%", fig.cap="", fig.align="center"}
-knitr::include_graphics("img/Diagrama42.jpg")
+knitr::include_graphics("img/Diagrama42.jpeg")
 ```
 
+---
 ### Mecanismos: VP como instrumento de control
 
 <div style="text-align: justify">
@@ -608,20 +632,21 @@ Mas estas pueden dejar de ser efectivas, comenzando el IPV. **Su ocurrencia es m
 ---
 ### Mecanismos: VP como instrumento de control
 
-```{r, echo=FALSE, out.width="70%", fig.align="center"}
+```{r, echo=FALSE, out.width="135%", fig.align="center"}
 knitr::include_graphics("img/Tabla81.jpg")
 ```
 
 ---
 ### Mecanismos: Efectos Heterogéneos 
 
-<img style="float: right;" src="img/TablaB171.jpg" width="340" height="500">
+<img style="float: right;" src="img/TablaB171.jpg" width="720" height="420">
 
 <div style="text-align: justify">
 
-1)Efectos heterogéneos por presencia de niños menores de 18 años en el hogar
-2)Efectos heterogéneos por "tipo de hombre"
 
+1. Efectos heterogéneos por presencia de niños menores de 18 años en el hogar
+
+2. Efectos heterogéneos por "tipo de hombre"
 
 
 ---
@@ -631,9 +656,9 @@ knitr::include_graphics("img/Tabla81.jpg")
   
 La reforma pudo haber afectado de forma directa o indireca a variables relacionadas con VP. A su vez, estos mecanismos se pudieron haber activado de forma retardada.
 
-<img style="float: right;" src="img/TablaB17.jpg" width="340" height="500">
+<img style="float: left;" src="img/TablaB17.jpg" width="460" height="420">
 
-La autora estima si la reforma tuvo un impacto en alguna de estas variables, obtiene coeficientes no significativos en el corto y largo plazo. Concluye es poco probable que los cambios en estas variables estén explicando el patrón observado en la VP.
++ La autora estima si la reforma tuvo un impacto en alguna de estas variables, obtiene coeficientes no significativos en el corto y largo plazo. Concluye es poco probable que los cambios en estas variables estén explicando el patrón observado en la VP.
 
 ---
 ### Limitaciones y conclusiones
@@ -733,9 +758,3 @@ knitr::include_graphics("img/TablaB17.jpg")
 ```
 
 
----
-### Efecto de facilitar el divorcio en VP - Quitando un estado a la vez
-
-```{r, echo=FALSE, out.width="95%", fig.align="center"}
-knitr::include_graphics("img/c6.jpg")
-```
