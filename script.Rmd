@@ -634,17 +634,16 @@ Mas estas pueden dejar de ser efectivas, comenzando el IPV. **Su ocurrencia es m
 ---
 ### Mecanismos: VP como instrumento de control
 
-```{r, echo=FALSE, out.width="135%", fig.align="center"}
+```{r, echo=FALSE, out.width="42%", fig.align="center"}
 knitr::include_graphics("img/Tabla812.jpg")
 ```
 
 ---
 ### Mecanismos: Efectos Heterogéneos 
 
-<img style="float: right;" src="img/TablaB161.jpg" width="720" height="420">
+<img style="float: right;" src="img/TablaB161.jpg" width="520" height="420">
 
 <div style="text-align: justify">
-
 
 1. Efectos heterogéneos por presencia de niños menores de 18 años en el hogar
 
@@ -660,7 +659,7 @@ La reforma pudo haber afectado de forma directa o indireca a variables relaciona
 
 <img style="float: left;" src="img/TablaB17.jpg" width="460" height="420">
 
-+ La autora estima si la reforma tuvo un impacto en alguna de estas variables, obtiene coeficientes no significativos en el corto y largo plazo. Concluye es poco probable que los cambios en estas variables estén explicando el patrón observado en la VP.
+La autora estima si la reforma tuvo un impacto en alguna de estas variables, obtiene coeficientes no significativos en el corto y largo plazo. Concluye es poco probable que los cambios en estas variables estén explicando el patrón observado en la VP.
 
 ---
 ### Limitaciones y conclusiones
