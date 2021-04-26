@@ -678,9 +678,13 @@ No obstante, el resultado de largo plazo proviene de dos estados del país. Esta
 ---
 ## Limitaciones
 
-Algunas limitaciones adicionales podrían ser: 
+Algunas limitaciones/comentarios adicionales podrían ser: 
 
-* 
+*  hhh
+
+* Contemplar el cambio de la compensación económica que trajo consigo la reforma como mecanismo de causalidad de la violencia 
+
+* Relación mixta del nivel de educación con las posibilidades de salida, debido a posibles variables omitidas
 
 
 La ENDIREH 2021 capturará sucesos de pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
