@@ -28,12 +28,12 @@ style_mono_accent(
 
 
 <div style="text-align: justify">
-
+  
 ## Motivación
 
-+ Sabemos, o pensamos, que facilitar el acceso al divorcio empodera a las personas con mayor voluntad o *willingness* de terminar un matrimonio, a través de un aumento en su poder de negociación.
++ Sabemos, o pensamos, que mejorar el acceso a divorico empodera a las personas con mayor voluntad o *willingness* de terminar un matrimonio.
 
-+ Hay evidencia empírica y analítica que sostiene que facilitar el acceso al divorcio reduce la violencia de pareja.
++ Hay mucha evidencia empirica y analitica que sostiene que facilitar el acceso al divorcio reduce la violencia de pareja.
 
 + Sin embargo, la evidencia empirica se ha obtenido de las experiencias en países desarrollados.
 
@@ -42,19 +42,15 @@ style_mono_accent(
 
 ## Relevancia: Violencia de pareja
 
-<div style="text-align: justify">
++ En el mundo, 1 de cada 3 mujeres han experimentado violencia de pareja (inter-partner violence) (Si lo vemos del otro lado, aproximadamente 1 de cada 3 hombres la ha cometido).
 
-+ En el mundo, 1 de cada 3 mujeres han experimentado violencia de pareja (VP, o *intimate partner violence*) (Si lo vemos del otro lado, aproximadamente 1 de cada 3 hombres la ha cometido).
-
-+ Se ha asociado la VP a inestabiliad en el empleo, reducción de productividad y ganancias, a salud deficiente, así como a externalidades negativas en los hijos.
++ Se ha asociado la violencia de pareja a inestabiliad en el empleo, reducción de productividad y ganancias, a salud deficiente, ademas de externalidades negativas en los hijos.
 
 + En países en desarrollo hay mayor prevalencia del uso de violencia.
 
 ---
 
 ## Relevancia: Divorcio unilateral
-
-<div style="text-align: justify">
 
 + El divorcio unilateral permite que el divorcio sea concedido sin necesidad de probar una razón.
 
@@ -68,35 +64,23 @@ style_mono_accent(
 
 ## Relevancia: Falta certeza sobre su relación con el divorcio
 
-<div style="text-align: justify">
-
 + Modelos analíticos y trabajos empíricos en países desarrollados sostienen que con el divorcio unilateral disminuye la violencia.
 
-+ Está también el argumento de que la violencia puede aumentar **si el hombre sigue gozando de poder fáctico y ve al divorcio como una amenaza** de que su esposa “escape”.
++ Esta también el argumento de que la violencia puede aumentar **si el hombre sigue gozando de poder fáctico y ve al divorcio como una amenaza** de que su esposa “escape”.
 
 + Entre estas posturas está la respuesta, los modelos asumen que no hay fricciones de valores culturales. Es decir, asumen que un avance legal en la equidad de genero se traduce en un avance real.
 
-+ Los estudios empíricos que se han hecho, comprueban que efectivamente hay una reduccion de violencia pero **¡sorpresa!**, estos se han hecho en paises desarrollados.
++ Los estudios empiricos que se han hecho, comprueban que efectivamente hay una reduccion de violencia pero **¡sorpresa!**, estos se han hecho en paises desarrollados.
 
-+ A grandes rasgos en países en desarrollo hay mayor prevalencia de violencia (de cualquier tipo) y el divorico es menos aceptado culturamente. Asimismo, hay menor apoyo a victimas y mas dificultades en cuando a sostener arreglos judiciales, como el pago de manuntencion.
++ **A grandes rasgos en paises en desarrollo hay mayor prevalencia de violencia (de cualquier tipo) y el divorico es menos aceptado culturamente. Asimismo, hay menor apoyo a victimas y mas dificultades en cuando a sostener arreglos judiciales, como el pago de manuntencion.**
 
 ---
 
 ## Pregunta
 
-Debido a lo expuesto anteriormente, surge la pregunta:
+Debido a lo expuesto anteriormente, que surja la pregunta:
 
-+ ¿Existe una relación entre facilitar el acceso al divorcio y la violencia de pareja en México?
-
----
-
-## Contexto
-
-México es un lugar ideal para evaluar esta pregunta debido a
-
-+ Existe variación en la implementación del divorcio unilateral, temporal y geográficamente.
-
-+ 15 entidades federativas aprobaron una reforma (CDMX en 2008 + 14 estados en 2016).
++ **¿Existe una relación entre facilitar el acceso al divorcio y la violencia de pareja en México?**
 
 ---
 
@@ -107,38 +91,47 @@ México es un lugar ideal para evaluar esta pregunta debido a
 knitr::include_graphics("bilateral.png")
 ```
 
-+ Con verde vemos los nodos que guían al divorcio otorgado, con rojo aquellos que llevan al denegado, con amarillo aquellos donde el proceso podría terminar en ambos casos.
 
 
 ---
 
 ## Divorcio en México
 
-```{r, echo=FALSE, out.width="90%", fig.align="center", fig.cap=" Procedo de divorcio unilateral antes (izquierda) y después (derecha) de la reforma"}
+```{r, echo=FALSE, out.width="80%", fig.align="center", fig.cap=" Proceso de divorcio unilateral antes y después de la reforma"}
 knitr::include_graphics("unilateral.png")
+
 ```
 
 
 
 ---
+## Contexto
+
+México es un lugar ideal para evaluar esta pregunta debido a
+
++ existe una variación en la implementación del divorcio unilateral, temporal y geográficamente.
++ 15 entidades federativas aprobaron una reforma (CDMX en 2008 + 14 estados en 2016).
+
+```{r, echo=FALSE, out.width="70%", fig.align="center", fig.cap="Efecto de reforma"}
+knitr::include_graphics("main_graph.png")
+
+```
+---
 
 ## Contexto
 
-<div style="text-align: justify">
+El divorcio unilateral ha sido sucedido por un incremento significante en las tasas de divorcio; un incremento en el acumulado de mujeres divorciadas; un decremento en el acumulado de mujeres casadas y finalmente un cambio estadisticamente insiginicante en las tasas de matrimonio..
 
-El divorcio unilateral ha sido sucedido por un incremento significativo en las tasas de divorcio; un incremento en el acumulado de mujeres divorciadas; un decremento en el acumulado de mujeres casadas y finalmente un cambio estadisticamente no significativo en las tasas de matrimonio...
+Asimismo hay efectos de corto y mediano plazo en cuanto a VP: 
 
-Asimismo, hay efectos de corto y mediano plazo en cuanto al VP: 
++ de 0 a 6 años después de la aprobación no hay relacion 
++ de 6-8  después existe un aumento del 3 al 6 %, estadisticamente significativo.
 
-+ de 0 a 6 años después de la aprobación, no hay relacion 
-+ de 6-8  después existe un aumento del 21%, el cual es estadísticamente significativo.
+Estos resultados provenen sobretodo de aquellas mujeres que han seguido casadas despues de la reforma. (**La autora sugiere que puede ser que al principio los hombres tengamos herramientas no violentas para disuadir pero en el largo plazo estas son insuficientes y recurrimos a la violencia**)
 
-Estos resultados provienen sobre todo de aquellas mujeres que han seguido casadas despues de la reforma. (La autora sugiere que puede ser que a corto plazo, los hombres tengan herramientas no violentas para disuadirlas de dejarlo pero en el largo plazo estas son insuficientes)
-
-+ Finalmente, el hecho de que la reforma se haya hecho en casi la mitad de las entidades federativas en distintos tiempos permite que la relación entre divorcio y violencia de pareja pueda ser analizada bajo un esquema de Diff-in-diff.
++ Finalmente, el hecho de que la reforma se haya hecho en casi la mitad de las entidades federativas en distintos tiempos permite que la relación entre divorcio y violencia de pareja pueda ser analizada bajo un esquema de dif and dif.
 
 ---
-
 
 ## Datos
 
