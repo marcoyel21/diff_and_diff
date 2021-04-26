@@ -679,13 +679,13 @@ Algunas limitaciones adicionales podrían ser:
 
 * Cambio en la compensación económica como mecanismo conductor de VP
 
-* Educación como proxy de opciones externas podría tener problemas de variables omitidas
+* Educación y número de hijos como proxy de opciones externas podría tener problemas de variables omitidas
 
 * Experiencia de violencia en la infancia de las mujeres como factor determinante de preferencias
 
 * *Marital selection*. ¿Sesgo de selección en la calidad de los matrimonios que se observan en los datos?
 
-Por último... la ENDIREH 2021 capturará sucesos de pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
+Por último... la ENDIREH 2021 capturará sucesos de la pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
 
 ---
  <style>
