@@ -683,7 +683,7 @@ Algunas limitaciones adicionales podrían ser:
 
 * Experiencia de violencia en la infancia de las mujeres como factor determinante de preferencias
 
-* *Marital selection*. ¿Sesgo de selección en la calidad de los matrimonios que se observan en los datos?
+* *Marital selection*. ¿Sesgo de selección en por los matrimonios que se salen de la muestra?
 
 Por último... la ENDIREH 2021 capturará sucesos de la pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
 
