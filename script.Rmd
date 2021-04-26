@@ -186,12 +186,14 @@ La muestra está compuesta por mujeres casadas durante la reforma y que continua
 <small>Se excluyeron aquellas que se casaron después de la reforma.</small>
 
 Características de la mujer casada:
+
 -	Mujeres que viven con su pareja.
 -	Separadas temporalmente.
 -	Separadas definitivamente, pero no divorciadas.
 
 
 Estatus de la relación al momento de la encuesta:
+
 -	Años de matrimonio y/o divorcio.
 ---
 ---
@@ -556,11 +558,11 @@ Y las estimaciones exluyendo a un estado a la vez.
 
 + Adicionalmente, considera la posibilidad de que sus resultados presenten sesgos por otras razones como:
 
-  + migración interestatal
+  + Migración interestatal
   
-  + errores de medición en la composición de su muestra de mujeres casadas o de su variable dependiente de ser víctima de VP
+  + Errores de medición en la composición de su muestra de mujeres casadas o de su variable dependiente de ser víctima de VP
   
-  + traslape entre la encuesta y los episodios de VP
+  + Traslape entre la encuesta y los episodios de VP
 
 
 ---
@@ -673,7 +675,14 @@ El hallazgo es de especial importancia dado que es contrario a lo que se había 
 
 No obstante, el resultado de largo plazo proviene de dos estados del país. Esta es la principal **limitación** del trabajo. ¿Se llegaría a las mismas conclusiones incluyendo la futura ENDIREH 2021?
 
-???
+---
+## Limitaciones
+
+Algunas limitaciones adicionales podrían ser: 
+
+* 
+
+
 La ENDIREH 2021 capturará sucesos de pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
 
 ---
