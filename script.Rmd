@@ -679,10 +679,17 @@ No obstante, el resultado de largo plazo proviene de dos estados del país. Esta
 
 Algunas limitaciones adicionales podrían ser: 
 
-* 
+* Poder de negociación de las mujeres y el *male backlash effect* 
 
+* Cambio en la compensación económica como mecanismo conductor de VP
 
-La ENDIREH 2021 capturará sucesos de pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
+* Educación como proxy de opciones externas y variables omitidas
+
+* Experiencia de violencia en la infancia de las mujeres como factor determinante de preferencias
+
+* *Marital selection*
+
+Por último... la ENDIREH 2021 capturará sucesos de pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
 
 ---
  <style>
