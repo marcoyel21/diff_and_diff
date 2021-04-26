@@ -260,11 +260,11 @@ Las 28 preguntas están divididas en 4 grupos de VP:
 
 .pull-left[
 
-Primera especificación:
+Especificación con controles:
 
 -	Edad de la mujer
 
--	Raíz indígena de la mujer
+-	Indígena mujer
 
 -	Nivel educativo de la mujer
 
@@ -286,7 +286,7 @@ Segunda especificación:
 
 - Edad del hombre
 
-- Raíz indígena del hombre
+- Indígena Hombre
 
 - Nivel educativo del hombre
 
