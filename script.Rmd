@@ -303,7 +303,7 @@ Segunda especificación:
 --
 ### Estudio sobre el impacto de la reforma
 
-.left[Para análisis del divorcio unilateral en la VP se utilizaron las variables:] 
+.left[Para probar robustes en el impacto del divorcio unilateral en la VP se utilizaron las variables:] 
 
 
 
