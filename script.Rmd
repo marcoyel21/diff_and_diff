@@ -680,17 +680,17 @@ No obstante, el resultado de largo plazo proviene de dos estados del país. Esta
 
 Algunas limitaciones adicionales podrían ser: 
 
-* Poder de negociación? 
-* Relación de la educación como variable de proxy de las opciones externas podría tener variables omitidas
-* male backlash effect -> husband perceives improvement of wife's outside option throigh the reduction of the cost of divorce as a threat to his culturally prescribed dominant role
-* Cambio en la compensación económica de la reforma como posible mecanismo de violencia -> si no había inocente no había compensación económica
-* reforma -> corto plazo -> se divorcian malos, pero los peores ? no será que ya estaban prontos a caducarse -> esto implica que los que se quedaron son buenos? pero sí controla por tiempo que llevan casados. Tal vez el ciclo de un matrimonio no determinado por duración, intuitivamente no hay correlación. Más bien sería un marital selection donde hay un ciclo que funciona de alguna forma que no conocemos, o de factores que hacen que las mujeres se queden -> no "buenos que se volvieron malos" 
-* does the divorce channel explain the rise in IPV? did the worst stay married? -> esto se ve en la joint probability de coral
-* women's experience of violence in her childhood?
-* bargaining power-> contribution to decision making -> pregunta de quien toma la mayoría de las veces 8 tipo de decisiones diferentes del hgoar ie si puede estudiar o trabajar, salir, dinero de la casa, niños, relaciones, metodos anticonceptivos. hace indices. 
-* women married to men with low education? interaccion con tipos de violencia?
+* Poder de negociación de las mujeres y el *male backlash effect* 
 
-La ENDIREH 2021 capturará sucesos de pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
+* Cambio en la compensación económica como mecanismo conductor de VP
+
+* Educación como proxy de opciones externas y variables omitidas
+
+* Experiencia de violencia en la infancia de las mujeres como factor determinante de preferencias
+
+* *Marital selection*
+
+Por último... la ENDIREH 2021 capturará sucesos de pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
 
 ---
  <style>
