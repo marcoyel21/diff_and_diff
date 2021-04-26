@@ -672,22 +672,25 @@ El principal efecto encontrado en este trabajo es que, en el largo plazo, la apr
 
 El hallazgo es de especial importancia dado que es contrario a lo que se había encontrado en países en desarrollo previamente. Hay otras implicaciones de política pública.
 
-No obstante, el resultado de largo plazo proviene de dos estados del país. Esta es la principal **limitación** del trabajo. ¿Se llegaría a las mismas conclusiones incluyendo la futura ENDIREH 2021?
+No obstante, el resultado de largo plazo proviene de dos estados del país. Esta es la principal **limitación** del trabajo.
+
 
 ---
 ## Limitaciones
 
+<div style="text-align: justify">
+
 Algunas limitaciones adicionales podrían ser: 
 
-* Poder de negociación de las mujeres y el *male backlash effect* 
+* Omisión del poder de negociación de las mujeres en el hogar y el *male backlash effect*
 
 * Cambio en la compensación económica como mecanismo conductor de VP
 
-* Educación como proxy de opciones externas y variables omitidas
+* Educación como proxy de opciones externas podría tener problemas de variables omitidas
 
 * Experiencia de violencia en la infancia de las mujeres como factor determinante de preferencias
 
-* *Marital selection*
+* *Marital selection*. ¿Sesgo de selección en la calidad de los matrimonios que se observan en los datos?
 
 Por último... la ENDIREH 2021 capturará sucesos de pandemia. Hay evidencia de que en pandemia la violencia doméstica aumentó... ¿será posible usar esta información para el presente estudio?
 
