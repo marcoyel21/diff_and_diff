@@ -680,6 +680,9 @@ No obstante, el resultado de largo plazo proviene de dos estados del país. Esta
 
 Algunas limitaciones adicionales podrían ser: 
 
+* Poder de negociación? 
+* Relación de la educación como variable de proxy de las opciones externas podría tener variables omitidas
+* Cambio en la compensación económica de la reforma como posible mecanismo de violencia
 * 
 
 
